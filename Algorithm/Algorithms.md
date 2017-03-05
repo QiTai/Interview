@@ -210,6 +210,7 @@ int main() {
 
 #### Panlindrome
 + shortest panlindrome(leetcode)
++ Longest Palindromic Substring(leetcode) --- **Manacher's Alg.**
 
 #### string to int (Leetcode)
 ##### 主要考察点
