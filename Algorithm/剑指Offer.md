@@ -1,7 +1,47 @@
+#### 面试题27：二叉搜索树与双向链表
+
+```cpp
+// 此解法与书不同，此法更好
+/*
+struct TreeNode {
+	int val;
+	struct TreeNode *left;
+	struct TreeNode *right;
+	TreeNode(int x) :
+			val(x), left(NULL), right(NULL) {
+	}
+};*/
+class Solution {
+public:
+    TreeNode* Convert(TreeNode* pRootOfTree) {
+        if (pRootOfTree == NULL)
+            return NULL;
+        if (pRootOfTree->left == NULL && pRootOfTree->right == NULL) {
+            return pRootOfTree;
+        }
+        TreeNode* left = Convert(pRootOfTree->left);
+        TreeNode* p = left;
+        while (p != NULL && p->right != NULL) {
+            p = p->right;
+        }
+        if (pRootOfTree->left) {
+            p->right = pRootOfTree;
+            pRootOfTree->left = p;
+        }
+        TreeNode* right = Convert(pRootOfTree->right);
+        if (pRootOfTree->right) {
+            pRootOfTree->right = right;
+            right->left = pRootOfTree;
+        }
+        return left == NULL ? pRootOfTree : left;
+    }
+};
+```
+
 #### 面试题32：[从1到n整数中1出现的次数](https://www.nowcoder.com/practice/bd7f978302044eee894445e244c7eee6?tpId=13&tqId=11184&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
 ```cpp
-// WayI : from编程之美
+// WayI : from编程之美(用此法)
 class Solution {
 public:
     int NumberOf1Between1AndN_Solution(int n)
@@ -29,7 +69,6 @@ public:
         return count;
     }
 };
-
 ```
 
 #### 面试题33:把数组排成最小的数
@@ -116,6 +155,37 @@ public:
         if ((*pattern == '.' && *str != '\0') || *pattern == *str)
             return match(str + 1, pattern + 1);
         return false;
+    }
+};
+```
+
+#### 面试题65：滑动窗口的最大值
+
+```cpp
+class Solution {
+public:
+    vector<int> maxInWindows(const vector<int>& num, unsigned int size) {
+        deque<int> maxIdx;
+        vector<int> res;
+        if (num.size() < size || size <= 0)
+            return res;
+        for (int i = 0; i < size; i++) {
+        	while (!maxIdx.empty() && num[maxIdx.back()] < num[i]) {
+            	maxIdx.pop_back();
+           	}
+           	maxIdx.push_back(i);
+        }
+        res.push_back(num[maxIdx.front()]);
+        for (int i = size; i < num.size(); i++) {
+            if (!maxIdx.empty() && i - maxIdx.front() >= size)
+                maxIdx.pop_front();
+            while (!maxIdx.empty() && num[maxIdx.back()] < num[i]) {
+                maxIdx.pop_back();
+            }
+            maxIdx.push_back(i);
+            res.push_back(num[maxIdx.front()]);
+        }
+        return res;
     }
 };
 ```
