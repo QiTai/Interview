@@ -108,12 +108,139 @@ public:
 };
 ```
 
-### Algorithms Related to Tree(树)
+### Algorithms Related to Tree(树) & Graph(图)
 + **recursive** algorithm is used mostly!!!
+
 + **stack, queue, deque** are mostly used as auxilary tool!!!
+
 + 二叉树中涉及大量的指针操作，每一次使用指针的时候，我们都要问这个指针有没有可能是NULL,如果是NULL该怎么办.(ROBUST)
 
++ 二叉树种的很多问题其实都可以转化为**层次遍历**来解决,例如 leetcode中如下题目
+  + Maximum Depth of Binary Tree
+
+  + Find Bottom Left Tree Value
+
+  + Find Largest Value in Each Tree Row  
+
+  + Diameter of Binary Tree
+
+  + Serialize and Deserialize Binary Tree
+
+  + 以Maximum Depth of Binary Tree为例,大致框架如下
+
+    ```cpp
+    class Solution {
+    public:
+        // no recursion, with one queue
+        int maxDepth(TreeNode* root) {
+            if (root == NULL)
+                return 0;
+            queue<TreeNode*> level;
+            int depth = 0;
+            level.push(root);
+            while (!level.empty()) {
+                int n = level.size();
+                for (int i = 0; i < n; i++) {
+                    TreeNode* front = level.front();
+                    level.pop();
+                    if (front->left) level.push(front->left);
+                    if (front->right) level.push(front->right);
+                }
+                depth++;
+            }
+            return depth;
+        }
+    };
+    ```
+
++ 树的（深度优先：前序、中序[Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)、后序[二叉树的非递归遍历](http://www.cnblogs.com/dolphin0520/archive/2011/08/25/2153720.html)）、（广度优先：层次遍历）及其非递归方法
+
+```cpp
+void preOrder(TreeNode* root) {
+	stack<TreeNode*> s;
+	TreeNode* p = root;
+	while (p != NULL || !s.empty()) {
+		while (p != NULL) {
+			cout << p->data << " ";
+			s.push(p);
+			p = p->left;
+		}
+		if (!s.empty()) {
+			p = s.top();
+			s.pop();
+			p = p->right;
+		}
+	}
+}
+
+void inOrder(TreeNode* root) {
+	stack<TreeNode*> s;
+	TreeNode* p = root;
+	while (p != NULL || !s.empty()) {
+		while (p != NULL) {
+			s.push(p);
+			p = p->left;
+		}
+		if (!s.empty()) {
+			p = s.top();
+			s.pop();
+			cout << p->data << " ";
+			p = p->right;
+		}
+	}
+}
+
+void postOrder(TreeNode* root) {
+	stack<TreeNode*> s;
+	TreeNode* pre = NULL;
+	TreeNode* cur;
+	s.push(root);
+	while (!s.empty()) {
+		cur = s.top();
+		if (cur->left == NULL && cur->right == NULL || (pre != NULL && (pre == cur->left || pre == cur->right))) {
+			cout << cur->data << " ";
+			s.pop();
+			pre = cur;
+		} else {
+			if (cur->right != NULL)
+				s.push(cur->right);
+			if (cur->left != NULL)
+				s.push(cur->left);
+		}
+	}
+}
+```
+
++ 图的深度优先、广度优先搜索及其非递归方法
+
 ### Algorithms Related to Array
+
++ Find Mode in a vector(frequently used), such as leetcode
+  +  [Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree)   
+  +  Most Frequent Subtree Sum
+  +  基本思想：先**排序**，再对排序后的数组用以下算法;如果不用排序的话，就要用额外的Hashmap
+
+  ```cpp
+  vector<int> findModesInSortedVector(vector<int> nums) {
+  	vector<int> res;
+  	int max = 0, cur = 0, cnt = 0;
+  	for (int i = 0; i < nums.size(); i++) {
+  		cnt++;
+  		if (nums[i] != cur) {
+  			cur = nums[i];
+  			cnt = 1;
+  		}
+  		if (cnt > max) {
+  			max = cnt;
+  			res.clear();
+  			res.push_back(nums[i]);
+  		} else if (cnt == max) {
+  			res.push_back(nums[i]);
+  		}
+  	}
+  	return res;
+  }
+  ```
 
 ### Algorithms Related to String
 #### [KMP](http://blog.csdn.net/v_july_v/article/details/7041827):用于寻找模式串P在文本串S中第一次出现的位置

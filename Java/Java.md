@@ -110,6 +110,11 @@ public class SimpleStringBuffer {
 
 + HashMap无序的,LinkedHashMap按照添加顺序存储的,TreeMap可以实现外部排序接口，默认升序
 
++ Java HashMap  doesn't append the new element at tail instead it append new element at the head *to avoid tail traversing*. If race condition happens then you will end up with an infinite loop.
+
+  Read more: [http://javarevisited.blogspot.com/2011/02/how-hashmap-works-in-java.html#ixzz4abGepUQ9](http://javarevisited.blogspot.com/2011/02/how-hashmap-works-in-java.html#ixzz4abGepUQ9)
+
+
 ### HashMap/TreeMap/LinkedHashMap/HashTable
 + 
   ![Difference](/Img/Difference between HashMap_TreeMap_LinkedHashMap_and_hashtable in Java.png)
@@ -142,7 +147,7 @@ public class SimpleStringBuffer {
     + WeakHashMap 改进的HashMap，实现了“弱引用”，如果一个key不被引用，则被GC回收
 
 + More as follows:
-+ ![Iterable](/Img/Iterable.jpg)
++ ![Iterable](/Img/Map&Collection.png)
 
 ### Iterate over HashMap
 
