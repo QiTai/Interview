@@ -8,3 +8,7 @@
 + 419-Battleships in a Board vs. 200-Number of Islands
   + 419(Extra rules, horizontal and vertical, easy to solve)
   + 200(DFS to solve)
++ Dynamic Programming
+  + 70-Climbing Stairs (easy)
+  + 62-Unique Paths (medium)
+  + 63-Unique Paths II (medium)

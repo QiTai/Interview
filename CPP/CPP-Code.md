@@ -1,5 +1,103 @@
 # Excellent C++ Code!
 
++ C++ support for heap
+
+  + one way use **priority_queue**
+
+    ```cpp
+    // Interview 剑指Offer-64:数据流中的中位数
+    class Solution {
+    public:
+        void Insert(int num) {
+            if ( ((minHeap.size() + maxHeap.size()) & 1) == 0) {
+                if (maxHeap.size() > 0 && num < maxHeap.top()) {
+                    maxHeap.push(num);
+                    num = maxHeap.top();
+                    maxHeap.pop();
+                }
+                minHeap.push(num);
+            } else {
+                if (minHeap.size() > 0 && num > minHeap.top()) {
+                    minHeap.push(num);
+                    num = minHeap.top();
+                    minHeap.pop();
+                }
+                maxHeap.push(num);
+            }
+        }
+        double GetMedian() {
+            int size = minHeap.size() + maxHeap.size();
+
+            double median = 0;
+            if ((size & 1) == 1) {
+                median = minHeap.top()
+            } else {
+                median = (minHeap.top() + maxHeap.top()) / 2.0;
+            }
+            return median;
+        }
+    private:
+        priority_queue<int, vector<int>, less<int>> maxHeap;
+        priority_queue<int, vector<int>, greater<int>> minHeap;
+    };
+    ```
+
+  + one way use **make_heap, push_heap, pop_heap** 
+
+    ```cpp
+    // Interview 剑指Offer-64:数据流中的中位数
+    class Solution {
+    public:
+        void Insert(int num)
+        {
+            if (((min.size() + max.size()) & 1) == 0) {
+                if (max.size() > 0 && num < max[0]) {
+                    max.push_back(num);
+                    push_heap(max.begin(), max.end(), less<int>());
+                     
+                    num = max[0];
+                    pop_heap(max.begin(), max.end(), less<int>());
+                    max.pop_back();
+                }
+                min.push_back(num);
+                push_heap(min.begin(), min.end(), greater<int>());
+            } else {
+                if (min.size() > 0 && min[0] < num) {
+                    min.push_back(num);
+                    push_heap(min.begin(), min.end(), greater<int>());
+                     
+                    num = min[0];
+                     
+                    pop_heap(min.begin(), min.end(), greater<int>());
+                    min.pop_back();
+                }
+                 
+                max.push_back(num);
+                push_heap(max.begin(), max.end(), less<int>());
+            }
+        }
+     
+        double GetMedian()
+        {
+            int size = min.size() + max.size();
+             
+            double median = 0;
+            if ((size & 1) == 1)
+                median = min[0];
+            else
+                median = (min[0] + max[0]) / 2.0;
+             
+            return median;
+        }
+    private:
+        vector<int> min;
+        vector<int> max;
+     
+    };
+    ```
+
+    ​
+
 + beautiful way to get words from a ' \n\t' seperated string.
 ```c++
 string str("dog\tcat\ncat dog");
@@ -579,4 +677,4 @@ HasPtr& HasPtr::operator=(const HasPtr &rhs) {
 ```
 
 
-	
+​	
