@@ -21,4 +21,9 @@
 + Binary Search & Divide and Conquer
   + 74-Search a 2D Matrix 
   + 240-Search a 2D Matrix II
++ Palindromic
+  + shortest panlindrome (leetcode)
+  + Longest Palindromic Substring (leetcode) -- **Manacher's Alg. && Dyanamic Programming**
+  + Longest Palindromic Subsequences(leetcode) --**Dynamic Programming**
+
 
