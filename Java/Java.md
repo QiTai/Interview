@@ -185,7 +185,9 @@ for (Iterator it = map.entrySet().iterator(); it.hasNext(); ) {
 
 + sleep必须捕获异常，而wait，notify和notifyAll不需要捕获异常
 
-  ​
+### Miscellany
++ str.substring(beginIndex, endIndex) : with beginIndex included, but endIndex **not included**!!!
++ ArrayList<Integer> al; al.toString() is a useful function for debugging!
 
 
 ### [Java类加载过程](https://www.nowcoder.com/profile/9531731/test/6727674/26108#summary)
