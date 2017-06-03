@@ -199,4 +199,3 @@ for (Iterator it = map.entrySet().iterator(); it.hasNext(); ) {
 
 
 ### [133 Core Java Interview Questions Answers From Last 5 Years - The MEGA List](http://javarevisited.blogspot.com/2015/10/133-java-interview-questions-answers-from-last-5-years.html#ixzz4aYQHjlIv) **TODO**
-
