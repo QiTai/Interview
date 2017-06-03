@@ -242,6 +242,8 @@ void postOrder(TreeNode* root) {
   }
   ```
 
++ Leetcode : 3Sum, 3Sum Closet, 4Sum思路类似(排序+双指针); Two Sum, 4Sum II思路类似(HashMap)
+
 ### Algorithms Related to String
 #### [KMP](http://blog.csdn.net/v_july_v/article/details/7041827):用于寻找模式串P在文本串S中第一次出现的位置
 + next矩阵算法&KMP算法c++实现
@@ -338,6 +340,7 @@ int main() {
 #### Panlindrome
 + shortest panlindrome(leetcode)
 + Longest Palindromic Substring(leetcode) --- **Manacher's Alg.**
++ Longest Palindromic Subsequences(leetcode) --**Dynamic Programming**
 
 #### string to int (Leetcode)
 ##### 主要考察点

@@ -20,8 +20,18 @@
   + 78-Subsets
   + 90-Subsets II
 
++ 3Sum, 3Sum Closet, 4Sum思路类似(排序+双指针); Two Sum, 4Sum II思路类似(HashMap)
++ Binary Search & Divide and Conquer
+  + 74-Search a 2D Matrix 
+  + 240-Search a 2D Matrix II
+  + 162-Find Peak Element--**Binary Search**
++ Palindromic
+  + shortest panlindrome (leetcode)
+  + Longest Palindromic Substring (leetcode) -- **Manacher's Alg. && Dyanamic Programming**
+  + Longest Palindromic Subsequences(leetcode) --**Dynamic Programming**
+
 + Two Pointers
 
   + [75-Sort Colors](https://leetcode.com/problems/sort-colors)   
 
-    ​
+
