@@ -46,7 +46,7 @@
 
 + In-Place Change Matrix
 
-  + 48-Rotate Image
-
-  + Game of Life
+  + 48-Rotate Image -- **Find Rules**
+  + 289-Game of Life--**Use different numbers to represent the states**
+  + 73-Set Matrix Zeroes--**use the first row and col to store the states**
 
