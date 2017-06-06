@@ -19,6 +19,9 @@
   + 46-Permutations
   + 78-Subsets
   + 90-Subsets II
+  + 17-Letter Combinations of a Phone Number
+  + 22-Generate Parentheses
+  + 401-Binary Watch
 
 
 + Two Pointers
