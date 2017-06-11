@@ -8,13 +8,14 @@
 + 419-Battleships in a Board vs. 200-Number of Islands
   + 419(Extra rules, horizontal and vertical, easy to solve)
   + 200(DFS to solve)
-
 + Dynamic Programming
+  + **凡是求最优解的，一般都是走DP的路线!!!**
   + 70-Climbing Stairs (easy)
   + 62-Unique Paths (medium)
   + 63-Unique Paths II (medium)
-
+  + 132-Palindrome Partitioning II (Hard)
 + BackTracking
+  + **遇到要求所有组合、可能、排列等解集的题目，一般都是用DFS + backtracking来做**
   + 77-Combination
   + 46-Permutations
   + 78-Subsets
@@ -22,6 +23,9 @@
   + 17-Letter Combinations of a Phone Number
   + 22-Generate Parentheses
   + 401-Binary Watch
+  + 131-Palindrome Partitioning
+  + 51-N-Queens(Hard)
+  + 52-N-Queens II(Hard)
 
 
 + Two Pointers
@@ -45,6 +49,8 @@
   + shortest panlindrome (leetcode)
   + Longest Palindromic Substring (leetcode) -- **Manacher's Alg. && Dyanamic Programming**
   + Longest Palindromic Subsequences(leetcode) --**Dynamic Programming**
+  + 131-Palindrome Partitioning
+  + 132-Palindrome Partitioning II (Hard)
 
 
 + In-Place Change Matrix
