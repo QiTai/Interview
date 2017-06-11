@@ -5,15 +5,16 @@
    + 8. String to Integer (atoi)
 
 ### Similar Question
-+ 419-Battleships in a Board vs. 200-Number of Islands
-  + 419(Extra rules, horizontal and vertical, easy to solve)
-  + 200(DFS to solve)
+
+#### Same Method
+
 + Dynamic Programming
   + **凡是求最优解的，一般都是走DP的路线!!!**
   + 70-Climbing Stairs (easy)
   + 62-Unique Paths (medium)
   + 63-Unique Paths II (medium)
   + 132-Palindrome Partitioning II (Hard)
+  + 300-Longest Increasing Subsequence
 + BackTracking
   + **遇到要求所有组合、可能、排列等解集的题目，一般都是用DFS + backtracking来做**
   + 77-Combination
@@ -43,7 +44,13 @@
   + 240-Search a 2D Matrix II
 
     + 162-Find Peak Element--**Binary Search**
++ Hash
+  - 49-Group Anagrams
++ Reservoir Sampling
++ Greedy
 
+
+#### Same Topic
 
 + Palindromic
   + shortest panlindrome (leetcode)
@@ -58,6 +65,7 @@
   + 48-Rotate Image -- **Find Rules**
   + 289-Game of Life--**Use different numbers to represent the states**
   + 73-Set Matrix Zeroes--**use the first row and col to store the states**
-+ Hash
-  + 49-Group Anagrams
++ 419-Battleships in a Board vs. 200-Number of Islands
+  - 419(Extra rules, horizontal and vertical, easy to solve)
+  - 200(DFS to solve)
 
