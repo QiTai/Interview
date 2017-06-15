@@ -51,6 +51,9 @@
   + 210-Course Schedule II
 + Reservoir Sampling
 + Greedy
++ Sort & Interval
+  + Merge Intervals
+  + Insert Interval
 
 
 #### Same Topic
@@ -71,4 +74,5 @@
 + 419-Battleships in a Board vs. 200-Number of Islands
   - 419(Extra rules, horizontal and vertical, easy to solve)
   - 200(DFS to solve)
+
 
