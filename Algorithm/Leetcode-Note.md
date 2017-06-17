@@ -8,13 +8,14 @@
 
 #### Same Method
 
-+ Dynamic Programming
++ Dynamic Programming (**在String类型题目中用的很多**)
   + **凡是求最优解的，一般都是走DP的路线!!!**
   + 70-Climbing Stairs (easy)
   + 62-Unique Paths (medium)
   + 63-Unique Paths II (medium)
   + 132-Palindrome Partitioning II (Hard)
   + 300-Longest Increasing Subsequence
+  + 139-Word Break
 + BackTracking
   + **遇到要求所有组合、可能、排列等解集的题目，一般都是用DFS + backtracking来做**
   + 77-Combination
@@ -27,6 +28,7 @@
   + 131-Palindrome Partitioning
   + 51-N-Queens(Hard)
   + 52-N-Queens II(Hard)
+  + 140-Word Break II(同样是求all possible,用回溯，但是TLE了，还要加上**“剪枝"**的技巧) 
 
 
 + Two Pointers
@@ -51,6 +53,7 @@
   + 210-Course Schedule II
 + Reservoir Sampling
 + Greedy
+  + 55-Jump Game **From Dynamic Programming to Greedy**
 + Sort & Interval
   + Merge Intervals
   + Insert Interval
