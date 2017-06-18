@@ -2,7 +2,7 @@
 + How to check whether an int number is going to overflow? 
 * [Check for Integer Overflow](http://www.geeksforgeeks.org/check-for-integer-overflow/)
 * related leetcode
-   + 8. String to Integer (atoi)
+   + 8-String to Integer (atoi)
 
 ### Similar Question
 
@@ -16,9 +16,10 @@
   + 132-Palindrome Partitioning II (Hard) (**minimum cut**)
   + 300-Longest Increasing Subsequence (**longest optimization question**)
   + 139-Word Break(**yes or no question**)
-  + 322-Coin Change(**minimum optimization question** )
+  + 322-Coin Change(**minimum optimization question**)
 + BackTracking
   + **遇到要求所有组合、可能、排列等解集的题目，一般都是用DFS + backtracking来做**
+  + 如果单纯用backtracking会TLE，则考虑**剪枝(140,212)**;或者先用**dynamic programming储存一些有用信息(131)**
   + 77-Combination
   + 46-Permutations
   + 78-Subsets
@@ -26,7 +27,7 @@
   + 17-Letter Combinations of a Phone Number
   + 22-Generate Parentheses
   + 401-Binary Watch
-  + 131-Palindrome Partitioning
+  + 131-Palindrome Partitioning(return all possible,用回溯;利用DP存储有用信息，节省时间)
   + 51-N-Queens(Hard)
   + 52-N-Queens II(Hard)
   + 140-Word Break II(同样是求all possible,用回溯，但是TLE了，还要加上**“剪枝"**的技巧) 
@@ -36,11 +37,12 @@
 
 + Two Pointers
 
-  + 3Sum, 3Sum Closet, 4Sum思路类似(排序+双指针); Two Sum, 4Sum II思路类似(HashMap)
+  + 15-3Sum
+  + 16-3Sum Closet
+  + 18-4Sum
   + 11-Container with Most Water
   + 42-Trapping Rain Water
-  + [75-Sort Colors](https://leetcode.com/problems/sort-colors)   
-  + 3Sum, 3Sum Closet, 4Sum思路类似(排序+双指针); Two Sum, 4Sum II思路类似(HashMap)
+  + 75-Sort Colors
 
 
 + Binary Search & Divide and Conquer
@@ -49,28 +51,34 @@
   + 240-Search a 2D Matrix II
 
   + 162-Find Peak Element--**Binary Search**
-+ Hash
-  - 49-Group Anagrams
++ Hash & Hash Table
+  + 在string和array中要用到**统计出现次数**时常用的手段
+  + 49-Group Anagrams
+  + 347-Top K Frequent Elements(对于这类的**统计数字**的问题，首先应该考虑用哈希表来做)
+  +  1-Two Sum
+  + 454-4Sum II
 + Topological Sort & Graph
   + 207-Course Schedule
   + 210-Course Schedule II
 + Reservoir Sampling
+  + 382-Linked List Random Node
+  + [未知链表长度的情况下从中随机取k个数](http://www.cnblogs.com/longdouhzt/archive/2012/02/28/2371480.html)
 + Greedy
-  + 55-Jump Game **From Dynamic Programming to Greedy**
+  + 55-Jump Game (**From Dynamic Programming to Greedy**)
   + 134-Gas Station
 + Sort & Interval
-  + Merge Intervals
-  + Insert Interval
+  + 56-Merge Intervals
+  + 47-Insert Interval
 
 
 #### Same Topic
 
 + Palindromic
-  + shortest panlindrome (leetcode)
-  + Longest Palindromic Substring (leetcode) -- **Manacher's Alg. && Dyanamic Programming**
-  + Longest Palindromic Subsequences(leetcode) --**Dynamic Programming**
-  + 131-Palindrome Partitioning
-  + 132-Palindrome Partitioning II (Hard)
+  + 214-shortest palindrome--**Special String Tricks+KMP**
+  + 5-Longest Palindromic Substring-- **Manacher's Alg. && Dyanamic Programming**
+  + 512-Longest Palindromic Subsequences--**Dynamic Programming**
+  + 131-Palindrome Partitioning--**keywords: return all possible | so use Backtracking, with DP to help save time**
+  + 132-Palindrome Partitioning II--**Dynamic Programming**
 
 
 + In-Place Change Matrix
@@ -81,5 +89,10 @@
 + 419-Battleships in a Board vs. 200-Number of Islands
   - 419(Extra rules, horizontal and vertical, easy to solve)
   - 200(DFS to solve)
-
++ Sum
+  + 15-3Sum
+  + 16-3Sum Closet
+  + 18-4Sum以上思路类似(**排序+双指针**)
+  + 1-Two Sum
+  + 454-4Sum II以上思路类似(**HashMap**;doesn't use sort, because **return indices**)
 
