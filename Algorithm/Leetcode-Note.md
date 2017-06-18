@@ -10,12 +10,13 @@
 
 + Dynamic Programming (**在String类型题目中用的很多**)
   + **凡是求最优解的，一般都是走DP的路线!!!**
-  + 70-Climbing Stairs (easy)
-  + 62-Unique Paths (medium)
-  + 63-Unique Paths II (medium)
-  + 132-Palindrome Partitioning II (Hard)
-  + 300-Longest Increasing Subsequence
-  + 139-Word Break
+  + 70-Climbing Stairs (easy)(**conventional sub-problem**)
+  + 62-Unique Paths (medium)(**conventional sub-problem**)
+  + 63-Unique Paths II (medium) (**conventional sub-problem**)
+  + 132-Palindrome Partitioning II (Hard) (**minimum cut**)
+  + 300-Longest Increasing Subsequence (**longest optimization question**)
+  + 139-Word Break(**yes or no question**)
+  + 322-Coin Change(**minimum optimization question** )
 + BackTracking
   + **遇到要求所有组合、可能、排列等解集的题目，一般都是用DFS + backtracking来做**
   + 77-Combination
