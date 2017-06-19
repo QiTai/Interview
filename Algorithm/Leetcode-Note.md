@@ -45,17 +45,18 @@
   + 75-Sort Colors
 
 
-+ Binary Search & Divide and Conquer
++ Binary Search
 
   + 74-Search a 2D Matrix 
   + 240-Search a 2D Matrix II
-
   + 162-Find Peak Element--**Binary Search**
++ Divide and Conquer
+  + 215-Kth Largest Element in an Array
 + Hash & Hash Table
   + 在string和array中要用到**统计出现次数**时常用的手段
   + 49-Group Anagrams
   + 347-Top K Frequent Elements(对于这类的**统计数字**的问题，首先应该考虑用哈希表来做)
-  +  1-Two Sum
+  + 1-Two Sum
   + 454-4Sum II
 + Topological Sort & Graph
   + 207-Course Schedule
@@ -69,6 +70,11 @@
 + Sort & Interval
   + 56-Merge Intervals
   + 47-Insert Interval
+  + 324-Wiggle Sort II
++ Heap
+  + 当设计要找Top K(包括频繁更换Top 1),都可以考虑用Heap来做,在C++为priority_queue
+  + 215-Kth Largest Element in an Array
+  + 347-Top K Frequent Element
 
 
 #### Same Topic
