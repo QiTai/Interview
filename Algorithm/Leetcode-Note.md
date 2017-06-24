@@ -3,6 +3,12 @@
 * [Check for Integer Overflow](http://www.geeksforgeeks.org/check-for-integer-overflow/)
 * related leetcode
    + 8-String to Integer (atoi)
+### Easy to forget
+
++ 凡是涉及**int运算操作**，一定考虑**overflow**,非常容易忘记！！！
+  + 8-String to Integer (atoi)
+  + 29-Divide Two Integers
+
 
 ### Similar Question
 
@@ -10,6 +16,7 @@
 
 + Dynamic Programming (**在String类型题目中用的很多**)
   + **凡是求最优解的，一般都是走DP的路线!!!**
+  + **凡是求问题的解法的，一般可以考虑DP，从解决小问题开始**
   + 70-Climbing Stairs (easy)(**conventional sub-problem**)
   + 62-Unique Paths (medium)(**conventional sub-problem**)
   + 63-Unique Paths II (medium) (**conventional sub-problem**)
@@ -17,6 +24,7 @@
   + 300-Longest Increasing Subsequence (**longest optimization question**)
   + 139-Word Break(**yes or no question**)
   + 322-Coin Change(**minimum optimization question**)
+  + 91-Decode Ways(**conventional sub-problems**)
 + BackTracking
   + **遇到要求所有组合、可能、排列等解集的题目，一般都是用DFS + backtracking来做**
   + 如果单纯用backtracking会TLE，则考虑**剪枝(140,212)**;或者先用**dynamic programming储存一些有用信息(131)**
@@ -67,14 +75,18 @@
 + Greedy
   + 55-Jump Game (**From Dynamic Programming to Greedy**)
   + 134-Gas Station
-+ Sort & Interval
++ Sort 
   + 56-Merge Intervals
   + 47-Insert Interval
   + 324-Wiggle Sort II
+  + 174-Largest Number(**Special Sort Trick**, same with Offer)
 + Heap
   + 当设计要找Top K(包括频繁更换Top 1),都可以考虑用Heap来做,在C++为priority_queue
   + 215-Kth Largest Element in an Array
   + 347-Top K Frequent Element
++ Breadth-first-Search
+  + 127-Word Ladder(**表面考String，实质考察图的两点的最短路径[refer](http://bangbingsyb.blogspot.com/2014/11/leetcode-word-ladder-i-ii.html)**  ,这里必须用BFS,用DFS会TLE)
+  + 126-Word LadderII(BFS + 剪枝)
 
 
 #### Same Topic
@@ -101,4 +113,7 @@
   + 18-4Sum以上思路类似(**排序+双指针**)
   + 1-Two Sum
   + 454-4Sum II以上思路类似(**HashMap**;doesn't use sort, because **return indices**)
++ Interval
+  + 56-Merge Intervals
+  + 47-Insert Interval
 
