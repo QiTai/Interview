@@ -8,6 +8,7 @@
 + 凡是涉及**int运算操作**，一定考虑**overflow**,非常容易忘记！！！
   + 8-String to Integer (atoi)
   + 29-Divide Two Integers
+  + 166-Fraction to Recurring Decimal
 
 
 ### Similar Question
@@ -66,6 +67,7 @@
   + 347-Top K Frequent Elements(对于这类的**统计数字**的问题，首先应该考虑用哈希表来做)
   + 1-Two Sum
   + 454-4Sum II
+  + 166-Fraction to Recurring Decimal (编程之美上有一道反过来的题目Decimal->Fraction,可以对比)
 + Topological Sort & Graph
   + 207-Course Schedule
   + 210-Course Schedule II
@@ -88,6 +90,10 @@
   + 127-Word Ladder(**表面考String，实质考察图的两点的最短路径[refer](http://bangbingsyb.blogspot.com/2014/11/leetcode-word-ladder-i-ii.html)**  ,这里必须用BFS,用DFS会TLE)
   + 126-Word LadderII(BFS + 剪枝)
   + 130-Surrounded Regions(用递归DFS会栈溢出,用迭代DFS或BFS即可)
++ Find Rules(找规律题,这种题就是在面试中去寻找规律)
+  + 54-Spiral Matrix
+  + 59-Spiral Matrix II
+  + 48-Rotate Image
 
 
 #### Same Topic
