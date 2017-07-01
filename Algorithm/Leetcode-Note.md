@@ -86,6 +86,9 @@
   + 当设计要找Top K(包括频繁更换Top 1),都可以考虑用Heap来做,在C++为priority_queue
   + 215-Kth Largest Element in an Array
   + 347-Top K Frequent Element
++ Stack(use stack as tool)
+  + 455-Add Two Numbers II
+  + 150-Evaluate Reverse Polish Notation (I'm quite familiar with this term, **overflow is not the focus of this problem**)
 + Breadth-first-Search
   + 127-Word Ladder(**表面考String，实质考察图的两点的最短路径[refer](http://bangbingsyb.blogspot.com/2014/11/leetcode-word-ladder-i-ii.html)**  ,这里必须用BFS,用DFS会TLE)
   + 126-Word LadderII(BFS + 剪枝)
@@ -123,4 +126,7 @@
 + Interval
   + 56-Merge Intervals
   + 47-Insert Interval
++ List
+  + 2-Add Two Numbers(比较简单的list题目，最后注意要考虑carry)
+  + 455-Add Two Numbers II
 
