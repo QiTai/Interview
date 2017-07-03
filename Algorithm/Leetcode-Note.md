@@ -55,10 +55,11 @@
 
 
 + Binary Search
-
+  + 一般看到题目限制O(lg(m+n)),O(lgn)之类，就应想到Binary Search和Divide and Conquer
   + 74-Search a 2D Matrix 
   + 240-Search a 2D Matrix II
   + 162-Find Peak Element--**Binary Search**
+  + 4-Median of Two Sorted Arrays--**Excellent Idea**
 + Divide and Conquer
   + 215-Kth Largest Element in an Array
 + Hash & Hash Table
