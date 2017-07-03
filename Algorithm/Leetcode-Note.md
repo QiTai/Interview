@@ -69,6 +69,7 @@
   + 1-Two Sum
   + 454-4Sum II
   + 166-Fraction to Recurring Decimal (编程之美上有一道反过来的题目Decimal->Fraction,可以对比)
+  + 128-Longest Consecutive Sequence(本来一看到这种longest要想到DP,但是完全无法找到子问题与原问题之间的联系，所以要重新想思路，又看到题目要求O(n),所以“空间换时间”，在空间换时间方法中，最常用的就是Hash相关数据结果**unordered_map或unordered_set**)
 + Topological Sort & Graph
   + 207-Course Schedule
   + 210-Course Schedule II
