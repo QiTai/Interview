@@ -60,6 +60,8 @@
   + 240-Search a 2D Matrix II
   + 162-Find Peak Element--**Binary Search**
   + 4-Median of Two Sorted Arrays--**Excellent Idea**
+  + 34-Search for a Range--**Excellent Idea**
+  + 315-Count of Smaller Numbers After Self
 + Divide and Conquer
   + 215-Kth Largest Element in an Array
 + Hash & Hash Table
@@ -70,20 +72,6 @@
   + 454-4Sum II
   + 166-Fraction to Recurring Decimal (编程之美上有一道反过来的题目Decimal->Fraction,可以对比)
   + 128-Longest Consecutive Sequence(本来一看到这种longest要想到DP,但是完全无法找到子问题与原问题之间的联系，所以要重新想思路，又看到题目要求O(n),所以“空间换时间”，在空间换时间方法中，最常用的就是Hash相关数据结果**unordered_map或unordered_set**)
-+ Topological Sort & Graph
-  + 207-Course Schedule
-  + 210-Course Schedule II
-+ Reservoir Sampling
-  + 382-Linked List Random Node
-  + [未知链表长度的情况下从中随机取k个数](http://www.cnblogs.com/longdouhzt/archive/2012/02/28/2371480.html)
-+ Greedy
-  + 55-Jump Game (**From Dynamic Programming to Greedy**)
-  + 134-Gas Station
-+ Sort 
-  + 56-Merge Intervals
-  + 47-Insert Interval
-  + 324-Wiggle Sort II
-  + 174-Largest Number(**Special Sort Trick**, same with Offer)
 + Heap
   + 当设计要找Top K(包括频繁更换Top 1),都可以考虑用Heap来做,在C++为priority_queue
   + 215-Kth Largest Element in an Array
@@ -91,6 +79,8 @@
 + Stack(use stack as tool)
   + 455-Add Two Numbers II
   + 150-Evaluate Reverse Polish Notation (I'm quite familiar with this term, **overflow is not the focus of this problem**)
++ Binary Search Tree
+  + 315-Count of Smaller Numbers After Self
 + Depth-first-Search
   + 设计到在矩阵中寻找满足某条件之类的题目（涉及到形成”路径“），肯定是DFS及BackTracking之类的技巧，可能有的时候要加上“剪枝和DP"来节省时间
   + 329-Longest Increasing Path in a Matrix(**DFS+DP剪枝**,Longest就应该联想到DP)
@@ -98,6 +88,20 @@
   + 127-Word Ladder(**表面考String，实质考察图的两点的最短路径[refer](http://bangbingsyb.blogspot.com/2014/11/leetcode-word-ladder-i-ii.html)**  ,这里必须用BFS,用DFS会TLE)
   + 126-Word LadderII(BFS + 剪枝)
   + 130-Surrounded Regions(用递归DFS会栈溢出,用迭代DFS或BFS即可)
++ Sort 
+  - 56-Merge Intervals
+  - 47-Insert Interval
+  - 324-Wiggle Sort II
+  - 174-Largest Number(**Special Sort Trick**, same with Offer)
++ Topological Sort & Graph
+  - 207-Course Schedule
+  - 210-Course Schedule II
++ Reservoir Sampling
+  - 382-Linked List Random Node
+  - [未知链表长度的情况下从中随机取k个数](http://www.cnblogs.com/longdouhzt/archive/2012/02/28/2371480.html)
++ Greedy
+  - 55-Jump Game (**From Dynamic Programming to Greedy**)
+  - 134-Gas Station
 + Find Rules(找规律题,这种题就是在面试中去寻找规律)
   + 54-Spiral Matrix
   + 59-Spiral Matrix II
