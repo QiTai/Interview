@@ -84,6 +84,7 @@
 + Depth-first-Search
   + 设计到在矩阵中寻找满足某条件之类的题目（涉及到形成”路径“），肯定是DFS及BackTracking之类的技巧，可能有的时候要加上“剪枝和DP"来节省时间
   + 329-Longest Increasing Path in a Matrix(**DFS+DP剪枝**,Longest就应该联想到DP)
+  + 124-Binary Tree Maximum Path Sum(when no direct solution comes to mind, **recursion** is always the best one for tree-related problems)
 + Breadth-first-Search
   + 127-Word Ladder(**表面考String，实质考察图的两点的最短路径[refer](http://bangbingsyb.blogspot.com/2014/11/leetcode-word-ladder-i-ii.html)**  ,这里必须用BFS,用DFS会TLE)
   + 126-Word LadderII(BFS + 剪枝)
