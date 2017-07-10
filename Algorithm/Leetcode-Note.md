@@ -76,6 +76,7 @@
   + 当设计要找Top K(包括频繁更换Top 1),都可以考虑用Heap来做,在C++为priority_queue
   + 215-Kth Largest Element in an Array
   + 347-Top K Frequent Element
+  + 295-Find Median from Data Stream(剑指Offer也做过，巧妙利用最大堆和最小堆;Leetcode官方还给出了Balanced BST的方法，很妙，同时可以学习multiset这个C++数据结构)
 + Stack(use stack as tool)
   + 455-Add Two Numbers II
   + 150-Evaluate Reverse Polish Notation (I'm quite familiar with this term, **overflow is not the focus of this problem**)

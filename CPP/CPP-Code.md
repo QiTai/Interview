@@ -475,6 +475,16 @@ item.same_isbn(null_book); 				//error: string constructor is explicit
 item.same_isbn(Sales_item(null_book)); 	//right
 ```
 
++ About STL Algorithm
+```cpp
+lower_bound(nums.begin(), nums.end(), val): returns the iterator pointing to the first element which does not compare less than val;
+
+upper_bound(nums.begin(), nums.end(), val): returns the iterator pointing 
+to the first element which compares greater than val;
+
+nth_element(nums.begin(), nums.begin() + v.size() / 2, nums.end()): paritial sorting algorithm that rearranges element such that all of the elements before nth element are less thatn or equal to the elements after the nth element.
+```
+
 + About inline
 
 ```C++
@@ -676,5 +686,3 @@ HasPtr& HasPtr::operator=(const HasPtr &rhs) {
 }
 ```
 
-
-​	
