@@ -40,6 +40,14 @@ int main() {
 	return 0;
 }
 ```
++  the compator's difference in sort and priority_queue
+
+```cpp
+sort(nums.begin(), nums.end(), less<int>)= sort(nums.begin(), nums.ends()) : sort the array low -> high
+priority_queue<int, vector<int>, less<int>) = priority_queue<int>: produce a max heap;
+priority_queue<int, vector<int>, greater<int>): produce a min heap;
+```
+
 + sort on array
 ```cpp
     int a[] = { 4, 5, 2, 10, 9 };
@@ -120,22 +128,22 @@ int main() {
 + [How to choose between map and unordered_map?](http://stackoverflow.com/questions/13799593/how-to-choose-between-map-and-unordered-map)
 + derived class重新定义继承而来的private virtual函数，参考Herb Sutter [virtuality](http://www.gotw.ca/publications/mill18.htm)
 + 对父类的同名函数的访问：
-	* base class name::访问基类同名函数或属性（*而Java中可以用super,C#中可以用base*）
+  * base class name::访问基类同名函数或属性（*而Java中可以用super,C#中可以用base*）
 + 继承:
-	* 实现机理：内存中包含了父类的所有内容（*除了虚函数*）
+  * 实现机理：内存中包含了父类的所有内容（*除了虚函数*）
 + C++空类中自动创建的函数：
   * 缺省构造函数、拷贝构造函数、赋值运算符、析构函数、取址运算符
 + default constructor: consts and references must be initialized, so a class including them cannot be default-constructed unless explicitly supply constructor.
 
   ```C++
   struct X {
-	  const int a;
-	  const int& r;
+    const int a;
+    const int& r;
   }
   X x; //error
   ```
 + An classical bug related to operato= returing object rather than reference
- ```C++
+```C++
 #include <iostream>
 #include <vector>
 
@@ -190,26 +198,26 @@ int main() {
 	A a(5);
 	return 0;
 }
- ```
+```
 
 + Move Semantics
- * [C++11 Tutorial: Introducing the Move Constructor and the Move Assignment Operator](http://blog.smartbear.com/c-plus-plus/c11-tutorial-introducing-the-move-constructor-and-the-move-assignment-operator/)
+*    [C++11 Tutorial: Introducing the Move Constructor and the Move Assignment Operator](http://blog.smartbear.com/c-plus-plus/c11-tutorial-introducing-the-move-constructor-and-the-move-assignment-operator/)
 
- * [Move semantics and rvalue references in C++11](http://www.cprogramming.com/c++11/rvalue-references-and-move-semantics-in-c++11.html)*这篇文章写的很好*
+*    [Move semantics and rvalue references in C++11](http://www.cprogramming.com/c++11/rvalue-references-and-move-semantics-in-c++11.html)*这篇文章写的很好*
      + 从函数中返回的值变量可以赋给const reference,但是不能赋给refrenece
-	  ```cpp
-	  string getName() {
-	     return "Alex";
-	  }
-	
-	  int main() {
-	     const string& name = getName(); // OK
-	     string & name = getName();      // Not OK
+       ```cpp
+       string getName() {
+          return "Alex";
+       }
+
+       int main() {
+          const string& name = getName(); // OK
+          string & name = getName();      // Not OK
              
          const string&& name = getName(); //OK
          string&& name = getName(); //also OK
-	  }
-	  ```
+       }
+       ```
      + Move constructor and move assignment operator
      ```cpp
      class ArrayWrapper {
@@ -225,25 +233,25 @@ int main() {
         	int * _p_vals;
             int _size;
      };
-	
-		
+
+     	
      ```
      + **std::move** *change lvalue to rvalue, in order to call move constructor instead of copy constructor*
      ```cpp
-	 ArrayWrapper (ArrayWrapper &&other)
-		 : _p_vals(other._p_vals)
-		 , _metadata(std::move(other._metadata)) {
-			other._p_vals = NULL;
-		}
+      ArrayWrapper (ArrayWrapper &&other)
+     	 : _p_vals(other._p_vals)
+     	 , _metadata(std::move(other._metadata)) {
+     		other._p_vals = NULL;
+     	}
      ```
 + Boost Library Usage
-	* VS2012
-		+ 下载boost包
-		+ 将工程属性->C/C++->常规->附加包目录中添加下载的boost包所在目录
-		+ 在cpp或h文件`include <boost/lexical_cast.hpp>`
-	* Linux
-		+ 下载boost包
+  * VS2012
+    + 下载boost包
+    + 将工程属性->C/C++->常规->附加包目录中添加下载的boost包所在目录
+    + 在cpp或h文件`include <boost/lexical_cast.hpp>`
+  * Linux
+    + 下载boost包
         + 在cpp或h文件`include <boost/lexical_cast.hpp>`
-		+ 在编译的时候在命令中添加`-I/home/charles/Software/boost_1_59_0/`,全部命令为
-		`g++ -o boost_practice boost_practice.cpp -I/home/charles/Software/boost_1_59_0/` 
+    + 在编译的时候在命令中添加`-I/home/charles/Software/boost_1_59_0/`,全部命令为
+          `g++ -o boost_practice boost_practice.cpp -I/home/charles/Software/boost_1_59_0/` 
 
