@@ -111,6 +111,15 @@
   + 48-Rotate Image
 
 
+#### Same Trick
+
++ swap number in an array
+  + 题目一般要求O(n) time + O(1) space(正因为O(1) space,所以要修改原数组)
+  + 41-First Missing Positive
+  + 448-Find All Numbers Disappeared in an Array(have other ways)
+  + 442-Find All Duplicates in an Array(quite similar to 448)
+
+
 #### Same Topic
 
 + Palindromic
@@ -144,4 +153,10 @@
 + Maximum in Binary Tree
   + 124-Binary Tree Maximum Path Sum
   + 编程之美3.8-二叉树中节点的最大距离
++ Find Missing or Duplicate Numbers
+  + 41-Find Missing Positive(swap trick)
+  + 287-Find the Duplicate Number(binary search)
+  + 448-Find All Numbers Disappeared in an Array(swap trick)
+  + 442-Find All Duplicates in an Array(quite similar to 448, swap trick)
+  + 268-Missing Number(special condition : easy, bit manipulation)
 
