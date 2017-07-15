@@ -26,6 +26,7 @@
   + 139-Word Break(**yes or no question**)
   + 322-Coin Change(**minimum optimization question**)
   + 91-Decode Ways(**conventional sub-problems**)
+  + 10-Regular Expression Matching(string类题目，而且状态不是很好保存，且用recursion可以解决的用DP省时间)
 + BackTracking
   + **遇到要求所有组合、可能、排列等解集的题目，一般都是用DFS + backtracking来做**
   + 如果单纯用backtracking会TLE，则考虑**剪枝(140,212)**;或者先用**dynamic programming储存一些有用信息(131)**
