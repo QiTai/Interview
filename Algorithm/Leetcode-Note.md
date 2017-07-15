@@ -26,7 +26,8 @@
   + 139-Word Break(**yes or no question**)
   + 322-Coin Change(**minimum optimization question**)
   + 91-Decode Ways(**conventional sub-problems**)
-  + 10-Regular Expression Matching(string类题目，而且状态不是很好保存，且用recursion可以解决的用DP省时间)
+  + 10-Regular Expression Matching(string类题目，而且状态不是很好判断，且用recursion可以解决的用DP省时间)
+  + 44-Wildcard Matching(string类题目，用recursion会超时，就想到用DP)
 + BackTracking
   + **遇到要求所有组合、可能、排列等解集的题目，一般都是用DFS + backtracking来做**
   + 如果单纯用backtracking会TLE，则考虑**剪枝(140,212)**;或者先用**dynamic programming储存一些有用信息(131)**
@@ -161,4 +162,7 @@
   + 448-Find All Numbers Disappeared in an Array(swap trick)
   + 442-Find All Duplicates in an Array(quite similar to 448, swap trick)
   + 268-Missing Number(special condition : easy, bit manipulation)
++ String Matching
+  + 44-Wildcard Matching
+  + 10-Regular Expression Matching
 
