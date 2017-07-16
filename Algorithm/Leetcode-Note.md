@@ -118,6 +118,9 @@
   + 41-First Missing Positive
   + 448-Find All Numbers Disappeared in an Array(have other ways)
   + 442-Find All Duplicates in an Array(quite similar to 448)
++ Two-round reverse
+  + 189-Rotate Array
+  + 186-Reverse Words in a String II
 
 
 #### Same Topic
@@ -159,4 +162,8 @@
   + 448-Find All Numbers Disappeared in an Array(swap trick)
   + 442-Find All Duplicates in an Array(quite similar to 448, swap trick)
   + 268-Missing Number(special condition : easy, bit manipulation)
++ Reverse Words in a String
+  + 151-Reverse Words in a String(single iteration and careful handle with the spaces, just normal ways)
+  + 186-Reverse Words in a String II(in-place, use spacial trick here, two-round reverse)
+  + 557-Reverse Words in a String III(easy, spcial condition, just normal iteration to check is OK)
 
