@@ -119,6 +119,7 @@
   + 448-Find All Numbers Disappeared in an Array(have other ways)
   + 442-Find All Duplicates in an Array(quite similar to 448)
 + Two-round reverse
+  + 题目要求in-place
   + 189-Rotate Array
   + 186-Reverse Words in a String II
 
