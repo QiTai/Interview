@@ -26,6 +26,8 @@
   + 139-Word Break(**yes or no question**)
   + 322-Coin Change(**minimum optimization question**)
   + 91-Decode Ways(**conventional sub-problems**)
+  + 10-Regular Expression Matching(string类题目，而且状态不是很好判断，且用recursion可以解决的用DP省时间)
+  + 44-Wildcard Matching(string类题目，用recursion会超时，就想到用DP)
 + BackTracking
   + **遇到要求所有组合、可能、排列等解集的题目，一般都是用DFS + backtracking来做**
   + 如果单纯用backtracking会TLE，则考虑**剪枝(140,212)**;或者先用**dynamic programming储存一些有用信息(131)**
@@ -72,6 +74,7 @@
   + 454-4Sum II
   + 166-Fraction to Recurring Decimal (编程之美上有一道反过来的题目Decimal->Fraction,可以对比)
   + 128-Longest Consecutive Sequence(本来一看到这种longest要想到DP,但是完全无法找到子问题与原问题之间的联系，所以要重新想思路，又看到题目要求O(n),所以“空间换时间”，在空间换时间方法中，最常用的就是Hash相关数据结果**unordered_map或unordered_set**)
+  + 149-Max Points on a Line(在原本O(n^3)的基础上用Hash Table稍微改进到O(n^2),所以像这种Hard题目就是在原本思想上一点点改进)
 + Heap
   + 当设计要找Top K(包括频繁更换Top 1),都可以考虑用Heap来做,在C++为priority_queue
   + 215-Kth Largest Element in an Array
@@ -167,4 +170,7 @@
   + 151-Reverse Words in a String(single iteration and careful handle with the spaces, just normal ways)
   + 186-Reverse Words in a String II(in-place, use spacial trick here, two-round reverse)
   + 557-Reverse Words in a String III(easy, spcial condition, just normal iteration to check is OK)
++ String Matching
+  + 44-Wildcard Matching
+  + 10-Regular Expression Matching
 
