@@ -1,6 +1,6 @@
 ### NOTE
 
-#### Interview Question: 
+#### Interview Question:
 
 ##### 基本概念
 
@@ -81,39 +81,10 @@
 + 词向量
 + LDA模型
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Resources
 
 #### Videos
 
 + Google 2016 Summer Deep Learning:[Building Machines that Imagine and Reason: Principles and Applications of Deep Generative Models](http://videolectures.net/deeplearning2016_mohamed_generative_models/)
 
-
-
 #### Refer to CodeExamination for more
-
