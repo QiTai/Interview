@@ -1,5 +1,5 @@
 ### Que
-+ How to check whether an int number is going to overflow? 
++ How to check whether an int number is going to overflow?
 * [Check for Integer Overflow](http://www.geeksforgeeks.org/check-for-integer-overflow/)
 * related leetcode
    + 8-String to Integer (atoi)
@@ -41,7 +41,7 @@
   + 131-Palindrome Partitioning(return all possible,用回溯;利用DP存储有用信息，节省时间)
   + 51-N-Queens(Hard)
   + 52-N-Queens II(Hard)
-  + 140-Word Break II(同样是求all possible,用回溯，但是TLE了，还要加上**“剪枝"**的技巧) 
+  + 140-Word Break II(同样是求all possible,用回溯，但是TLE了，还要加上**“剪枝"**的技巧)
   + 79-Word Search(related to **PATH**, naturally **DFS**)
   + 212-Word Search II(“剪枝”的技巧+**Trie**)
 
@@ -58,7 +58,7 @@
 
 + Binary Search
   + 一般看到题目限制O(lg(m+n)),O(lgn)之类，就应想到Binary Search和Divide and Conquer
-  + 74-Search a 2D Matrix 
+  + 74-Search a 2D Matrix
   + 240-Search a 2D Matrix II
   + 162-Find Peak Element--**Binary Search**
   + 4-Median of Two Sorted Arrays--**Excellent Idea**
@@ -94,7 +94,7 @@
   + 127-Word Ladder(**表面考String，实质考察图的两点的最短路径[refer](http://bangbingsyb.blogspot.com/2014/11/leetcode-word-ladder-i-ii.html)**  ,这里必须用BFS,用DFS会TLE)
   + 126-Word LadderII(BFS + 剪枝)
   + 130-Surrounded Regions(用递归DFS会栈溢出,用迭代DFS或BFS即可)
-+ Sort 
++ Sort
   - 56-Merge Intervals
   - 47-Insert Interval
   - 324-Wiggle Sort II
@@ -130,8 +130,14 @@
 #### Same Topic
 
 + Palindromic
-  + 214-shortest palindrome--**Special String Tricks+KMP**
-  + 5-Longest Palindromic Substring-- **Manacher's Alg. && Dyanamic Programming**
+  + 214-shortest palindrome
+    + brute force(reverse string and compare the largest common substring) can be accepted! O(n^2) O(n), remember this solution
+    + two pointers is better solution! O(n^2) O(1), use this method
+    + Special String Tricks+KMP: just understand it, won't use it in real interview!
+  + 5-Longest Palindromic Substring
+    + Dyanamic Programming->optimization problem's first thought
+    + Two Pointers->better solution
+    + Manacher Alg->just understand, not possible on interview
   + 512-Longest Palindromic Subsequences--**Dynamic Programming**
   + 131-Palindrome Partitioning--**keywords: return all possible | so use Backtracking, with DP to help save time**
   + 132-Palindrome Partitioning II--**Dynamic Programming**
@@ -173,4 +179,3 @@
 + String Matching
   + 44-Wildcard Matching
   + 10-Regular Expression Matching
-
