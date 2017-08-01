@@ -7,6 +7,9 @@
 + [集成模型GDBT与RandomForest效果好的原因](https://www.zhihu.com/question/51818176)
 + [SVD vs. PCA](https://www.zhihu.com/question/38319536)
   + SVD是PCA的另一种algebraic formulation,这也提供了另外一种算法来计算PCA
++ 为什么逻辑回归的优化目标是最大似然函数而不是均方差？
+  + 个人总结：问题是一个二分类问题，y满足伯努利分布，而不是正太分布，可以参考Wikipedia-loss function for classification!
+  + 参考[知乎帖](https://www.zhihu.com/question/24900876)
 
 + 逻辑回归的极大似然估计的推导(to do)
 + SVM
