@@ -348,6 +348,7 @@ int main() {
 + 字符+-
 + 溢出
 + 异常字符串(如空字符;只含+-的字符串)
+
 ```cpp
 // wayI : leetcode
 class Solution {
@@ -411,7 +412,7 @@ long long StrToIntCore(const char* digit, bool minus) {
 	while (*digit != '\0') {
 		if (*digit >= '0' && *digit <= '9') {
 			int flag = minus ? -1 : 1;
-			num = num * 10 + flag * (*digit - '0');
+			num = num * 10 + flag * (* digit - '0');
 
 			if ((!minus && num > 0x7FFFFFFF)
 				|| (minus && num < (signed int)0x80000000)) {
@@ -425,140 +426,69 @@ long long StrToIntCore(const char* digit, bool minus) {
 			break;
 		}
 	}
-	if (*digit == '\0') {
+	if (* digit == '\0') {
 		g_nStatus = kValid;
 	}
 	return num;
 }
-```
+
+```cpp
+
 
 #### string to float (written by me)
+
 ```cpp
-#include <iostream>
-#include <string>
-
-using std::endl;
-using std::cout;
-using std::string;
-
 float myAtof(string str) {
 
-	// negelct all the spaces
-	int i = 0;
-	for (; i < str.size(); i++) {
-		if (str[i] == ' ')
-			continue;
-		else
-			break;
-	}
+    // neglect all the spaces
+    int i = 0, n = str.size();
+    while (i < n && str[i] == ' ') i++;
 
-	// '+' or '-' sign handle
-	int minus = 1;
-	if (i < str.size() && (str[i] == '-' || str[i] == '+')) {
-		minus = str[i] == '-' ? -1 : 1;
-		++i;
-	}
+    // sign part
+    int sign = 1;
+    if (i < n && str[i] == '+') {
+        i++;
+    } else if (i < n && str[i] == '-') {
+        sign = -1;
+        i++;
+    }
 
-	// integer part
-	float integer = 0.0;
-	for (; i < str.size(); i++) {
-		if (isdigit(str[i])) {
-			integer = integer * 10 + str[i] - '0';
-		}
-		else {
-			break;
-		}
-	}
+    // integer part
+    float integer = 0.0;
+    while (i < n && isdigit(str[i])) {
+        integer = integer * 10 + str[i++] - '0';
+    }
 
-	// decimal part
-	float decimal = 0.0;
-	int points = 0;
+    // decimal part
+    float decimal = 0.0;
+    int points = 0;
+    if (i < n && str[i] == '.') {
+        i++;
+        while (i < n && isdigit(str[i])) {
+            decimal = decimal * 10 + str[i++] - '0';
+            points++;
+        }
+    }
 
-	// point
-	if (i < str.size() && str[i] == '.') {
-		i++;
-		for (; i < str.size(); i++) {
-			if (isdigit(str[i])) {
-				decimal = decimal * 10 + str[i] - '0';
-				points++;
-			}
-			else {
-				break;
-			}
-		}
-		// followed by exp
-		if (i < str.size() && (str[i] == 'e' || str[i] == 'E')) {
-			int exp = 0.0;
-			i++;
-			int expMinus = 1;
+    // exp part
+    long exp = 0;
+    int expSign = 1;
+    if (i < n && (str[i] == 'e' || str[i] == 'E')) {
+        i++;
 
-			if (i < str.size() && (str[i] == '-' || str[i] == '+')) {
-				expMinus = str[i] == '-' ? -1 : 1;
-				i++;
-			}
+        if (i < n && str[i] == '+') {
+            i++;
+        } else if (i < n && str[i] == '-') {
+            expSign = -1;
+            i++;
+        }
 
-			for (; i < str.size(); i++) {
-				if (isdigit(str[i])) {
-					exp = exp * 10 + str[i] - '0';
-				}
-				else {
-					break;
-				}
-			}
-			return minus * (integer + decimal / pow(10, points)) * pow(10, expMinus * exp);
-		}
-		// followed by other non-exp and non-digit character
-		else {
-			return minus * (integer + decimal / pow(10, points));
-		}
+        while (i < n && isdigit(str[i])) {
+            exp = exp * 10 + str[i++] - '0';
+        }
 
-	}
-	// exp
-	else if (i < str.size() && (str[i] == 'e' || str[i] == 'E')) {
-		int exp = 0.0;
-		i++;
-		int expMinus = 1;
-
-		if (i < str.size() && (str[i] == '-' || str[i] == '+')) {
-			expMinus = str[i] == '-' ? -1 : 1;
-			i++;
-		}
-
-		for (; i < str.size(); i++) {
-			if (isdigit(str[i])) {
-				exp = exp * 10 + str[i] - '0';
-			}
-			else {
-				break;
-			}
-		}
-		return minus * (integer * pow(10, expMinus * exp));
-	}
-	// there are non '.' 'E' 'e' '[0-9]' character, ignore it, only return former integer;
-	else {
-		return minus * integer;
-	}
-
-	// start non-space character is not digit or '+' or '-', then return 0.0;
-	// return 0.0;
-}
-
-int main() {
-	cout << myAtof("    ") << endl;
-	cout << myAtof("   12.") << endl;
-	cout << myAtof("   1.2") << endl;
-	cout << myAtof("-13.24") << endl;
-	cout << myAtof("   -15.27e3") << endl;
-	cout << myAtof("   -16.29e-3") << endl;
-	cout << myAtof("   -41.26e-10.4") << endl;
-	cout << myAtof("   -1e-3") << endl;
-	cout << myAtof("   +134de-3a") << endl;
-	cout << myAtof("   1.3e3a") << endl;
-	cout << myAtof("   a") << endl;
-	cout << myAtof("   +a") << endl;
-	cout << myAtof("   13.25ra") << endl;
-	cout << myAtof("   14ra.3") << endl;
-	return 0;
+    }
+    return sign * (integer + decimal / pow(10, points)) * pow(10, expSign * exp);
 }
 ```
 

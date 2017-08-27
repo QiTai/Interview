@@ -5,6 +5,8 @@
 ##### 基本概念
 
 + LSTM各个cell的概念(to memorize?)
++ 如何用DNN做推荐系统,refer to[用深度学习（DNN）构建推荐系统](https://zhuanlan.zhihu.com/p/25343518?utm_source=itdadao&utm_medium=referral)
++ [CNN pooling理解](http://blog.csdn.net/jiejinquanil/article/details/50042791)
 
 ##### refers to [如果你是面试官，你怎么去判断一个面试者的深度学习水平](https://www.zhihu.com/question/41233373)
 
@@ -76,10 +78,14 @@
 
 
 ##### About NLP
-
-+ tf.idf
-+ 词向量
-+ LDA模型
++ Hidden Markov Model
++ Maximum Entropy Markov Model
++ Conditional Random Field
++ label biased problem
++ [Why is skip-gram better for infrequent words than CBOW?](https://stats.stackexchange.com/questions/180548/why-is-skip-gram-better-for-infrequent-words-than-cbow)
++ tf.idf -> known
++ 词向量 -> known
++ LDA模型 -> todo
 
 ### Resources
 
