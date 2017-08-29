@@ -26,12 +26,15 @@
   + 44-Wildcard Matching(string类题目，用recursion会超时，就想到用DP)
   + 198-House Robber
   + 213-House Robber II
+  + 123-Best time to buy and sell stock III
+  + 188-Best time to buy and sell stock IV
 
 + BackTracking
   + **遇到要求所有组合、可能、排列等解集的题目，一般都是用DFS + backtracking来做**
   + 如果单纯用backtracking会TLE，则考虑**剪枝(140,212)**;或者先用**dynamic programming储存一些有用信息(131)**
   + 77-Combination
   + 46-Permutations
+  + 47-Permutations II
   + 78-Subsets
   + 90-Subsets II
   + 17-Letter Combinations of a Phone Number

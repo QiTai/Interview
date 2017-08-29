@@ -7,6 +7,9 @@
 + LSTM各个cell的概念(to memorize?)
 + 如何用DNN做推荐系统,refer to[用深度学习（DNN）构建推荐系统](https://zhuanlan.zhihu.com/p/25343518?utm_source=itdadao&utm_medium=referral)
 + [CNN pooling理解](http://blog.csdn.net/jiejinquanil/article/details/50042791)
++ [Deep learning techniques for sentiment analysis](https://www.quora.com/How-is-deep-learning-used-in-sentiment-analysis)
+  + [LSTM for sentiment analysi](http://deeplearning.net/tutorial/lstm.html)
+  + [LSTM/Recursive/CNN](https://cs224d.stanford.edu/reports/Shirani-MehrH.pdf)
 
 ##### refers to [如果你是面试官，你怎么去判断一个面试者的深度学习水平](https://www.zhihu.com/question/41233373)
 

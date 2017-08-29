@@ -31,7 +31,9 @@
   * 如果Feature的数量比较小，而样本数量很多，需要手工添加一些feature变成第一种情况
 + [CTR预估一般采用LR+连续特征离散化,连续特征离散化的作用是什么?](https://www.zhihu.com/question/31989952)
   + LR一般和特征工程紧密联系在一起
-+ FM[Factorization Machine](https://tech.meituan.com/deep-understanding-of-ffm-principles-and-practices.html#mjx-eqn-eqfm)
++ FM[Factorization Machine]
+  + [1](https://tech.meituan.com/deep-understanding-of-ffm-principles-and-practices.html#mjx-eqn-eqfm)
+  + [2](https://tracholar.github.io/machine-learning/2017/03/10/factorization-machine.html)
 + 推荐算法
   + 基于内容的推荐算法:用户喜欢和自己关注过的Item在内容上类似的Item
   + 协同过滤:用户喜欢那些具有相似兴趣的用户喜欢过的商品
@@ -40,8 +42,8 @@
     + 基于模型的协同过滤算法
       + SVD
       + MF
++
 
-+ 行列式的物理意义？
 + SVM
   + SVM在什么情况下效果会比较差？(?)
 + PCA在什么情况下可以使用？(?)
@@ -50,4 +52,3 @@
 + MCMC(?)
 
 + 关于**时间序列**的卡尔曼滤波算法，HMM算法，波兹曼机等。——其中HMM适合做语音。?
-+ **推荐系统**中协同过滤的各种模型。还有近邻搜索，LSH（Locality-Sensitive Hashing）等。?
