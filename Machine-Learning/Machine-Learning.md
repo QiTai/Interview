@@ -3,7 +3,7 @@
 + 当前互联网公司广告、搜索、推荐等都常用的 **LR、FM(Factorization Machine)、GBDT** 等，把原理搞透彻，例如LR的各种优化算法，FM的优化算法，传统GBDT和XGBOOST的原理区别等
 + [机器学习防止过拟合的方法](https://www.zhihu.com/question/59201590)
 + [GBDT与AdaBoost区别](https://www.zhihu.com/question/54626685)
-+ [GBDT与XGboost区别](https://www.zhihu.com/question/54626685)
++ [GBDT与XGboost区别]()
 + [集成模型GDBT与RandomForest效果好的原因](https://www.zhihu.com/question/51818176)
 + [SVD vs. PCA](https://www.zhihu.com/question/38319536)
   + SVD是PCA的另一种algebraic formulation,这也提供了另外一种算法来计算PCA
@@ -42,7 +42,6 @@
     + 基于模型的协同过滤算法
       + SVD
       + MF
-+
 
 + SVM
   + SVM在什么情况下效果会比较差？(?)

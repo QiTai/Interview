@@ -7,6 +7,7 @@
   + 7-Reverse Integer
 
 
+
 ### Similar Question
 
 #### Same Method
@@ -14,11 +15,13 @@
 + Dynamic Programming (**在String类型题目中用的很多**)
   + **凡是求最优解的，一般都是走DP的路线!!!**
   + **凡是求问题的解法的，一般可以考虑DP，从解决小问题开始**
+  + **对于字符串的问题，稍微难点的十有八九都是用DP**
   + 70-Climbing Stairs (easy)(**conventional sub-problem**)
   + 62-Unique Paths (medium)(**conventional sub-problem**)
   + 63-Unique Paths II (medium) (**conventional sub-problem**)
   + 132-Palindrome Partitioning II (Hard) (**minimum cut**)
   + 300-Longest Increasing Subsequence (**longest optimization question**)
+  + 5-Longest Palindromic Substring
   + 139-Word Break(**yes or no question**)
   + 322-Coin Change(**minimum optimization question**)
   + 91-Decode Ways(**conventional sub-problems**)
@@ -28,6 +31,18 @@
   + 213-House Robber II
   + 123-Best time to buy and sell stock III
   + 188-Best time to buy and sell stock IV
+  + 72-Edit Distance
+  + 115-Distinct Subsequences
+  + 53-Maximum Subarray
+  + 152-Maximum Product Subarray
+  + 192-Dungeon Game
+  + Counting Bits
+  + Combination Sum IV
+  + Longest Common Subsequence(from Coding_Interview_in_Java_v3 194)
+  + Longest Common Substring(from Coding_Interview_in_Java_v3 195)
+  + 646-Maximum Length of Pair Chain
+  + 560-Subarray Sum Equals K
+  + 523-Continuous Subarray Sum
 
 + BackTracking
   + **遇到要求所有组合、可能、排列等解集的题目，一般都是用DFS + backtracking来做**
@@ -46,6 +61,7 @@
   + 140-Word Break II(同样是求all possible,用回溯，但是TLE了，还要加上**“剪枝"**的技巧)
   + 79-Word Search(related to **PATH**, naturally **DFS**)
   + 212-Word Search II(“剪枝”的技巧+**Trie**)
+  + 93-restore IP Addresses
 
 
 + Two Pointers
@@ -88,6 +104,8 @@
   + 149-Max Points on a Line(在原本O(n^3)的基础上用Hash Table稍微改进到O(n^2),所以像这种Hard题目就是在原本思想上一点点改进)
   + 138-Copy List with Random Pointers(HashTable is the basic though, more beautiful trick is to modify original structure)
   + 133-Clone Graph
+  + [Find longest subarray whose sum is divisible by K](https://jdhao.github.io/2017/09/01/longest-subarray-modulo-K/)
+
 
 + Heap
   + 当设计要找Top K(包括频繁更换Top 1),都可以考虑用Heap来做,在C++为priority_queue
@@ -117,12 +135,14 @@
   + 130-Surrounded Regions(用递归DFS会栈溢出,用迭代DFS或BFS即可)
 
 + Sort
+  - 类似这种Interval和pair的题目，先sort技巧是经常用到的
   - 56-Merge Intervals
   - 47-Insert Interval
   - 324-Wiggle Sort II
   - 174-Largest Number(**Special Sort Trick**, same with Offer)
+  - 646-Maximum Length of Pair Chain
 
-  * Bucket Sort
+  * Bucket
   - 164-Maximum Gap
 
 + Topological Sort & Graph
@@ -138,17 +158,22 @@
   - Single Number
   - Single Number II
   - Single Number III
+  - Number of 1 Bits(Most beatiful way : n &= n - 1)
+  - Repeated DNA Sequences(good)
 
 + Greedy
   - 55-Jump Game (**From Dynamic Programming to Greedy**)
   - 45-Jump GameII
   - 134-Gas Station
+  - 646-Maximum Length of Pair Chain
 
 + Find Rules(找规律题,这种题就是在面试中去寻找规律)
   + 54-Spiral Matrix
   + 59-Spiral Matrix II
   + 48-Rotate Image
 
++ Math
+  + 60-Permutation Sequences(use math rather than backtracking to speed up)
 
 #### Same Trick
 
@@ -163,6 +188,9 @@
   + 189-Rotate Array
   + 186-Reverse Words in a String II
 
++ Use Map to store the sub-array sum or module
+  + 560-Subarray Sum Equals K
+  + 523-Continuous Subarray Sum(遇到除法问题，我们肯定不能忘了除数为0的情况等处理)
 
 #### Same Topic
 
