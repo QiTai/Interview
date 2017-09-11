@@ -31,6 +31,7 @@
   * 如果Feature的数量比较小，而样本数量很多，需要手工添加一些feature变成第一种情况
 + [CTR预估一般采用LR+连续特征离散化,连续特征离散化的作用是什么?](https://www.zhihu.com/question/31989952)
   + LR一般和特征工程紧密联系在一起
+  + [对于特征离散化，特征交叉，连续特征离散化非常经典的解释](http://blog.csdn.net/lujiandong1/article/details/52412123)
 + FM[Factorization Machine]
   + [1](https://tech.meituan.com/deep-understanding-of-ffm-principles-and-practices.html#mjx-eqn-eqfm)
   + [2](https://tracholar.github.io/machine-learning/2017/03/10/factorization-machine.html)
@@ -42,7 +43,22 @@
     + 基于模型的协同过滤算法
       + SVD
       + MF
++ [为什么LR要用对数似然，为什么不用平方损失或者差的绝对值之类的损失]（面试官说就是为了得到凸函数）
+  - [怎么从通俗意义上理解逻辑回归的损失函数？](https://www.zhihu.com/question/47744216?from=profile_question_card)
 
++ [为什么一些机器学习模型需要对数据进行归一化](http://www.cnblogs.com/LBSer/p/4440590.html)
+  - [处理数据时不进行归一化会有什么影响？归一化的作用是什么？什么时候需要归一化？有哪些归一化的方法？](https://www.zhihu.com/question/20455227)
+
++ [K-means中的K如何确定?](https://www.zhihu.com/question/29208148/answer/43812335)
+
++ 如何判断一张图像是否是模糊的
+  - 将图像与一个模糊核（点扩散函数）做卷积，然后和原来的图像作对比，如果变化较大，说明原来图像是清晰的。
+
++ Random Forest和SVM的使用场景
+  - SVM在动辄超高维的文本分类问题中特别受欢迎，可惜内存消耗大，难以解释，运行和调参也有些烦人。而随机森林却刚好避开了这些缺点，比较实用
+
++ 朴素贝叶斯，这里有一个问题独立概率现实生活中不一定成立，为什么贝叶斯还是很好的（？）
++ 如何快速的求1亿张图像中相似的图片(?)
 + SVM
   + SVM在什么情况下效果会比较差？(?)
 + PCA在什么情况下可以使用？(?)

@@ -43,6 +43,10 @@
   + 646-Maximum Length of Pair Chain
   + 560-Subarray Sum Equals K
   + 523-Continuous Subarray Sum
+  + 120-Triangle
+  + 264-Ugly Number II(Microsoft Skype Interview Question)
+  + 464-Can I Win(用到bit manipulation的技巧来区分不同状态)
+  + 486-Predict the Winner
 
 + BackTracking
   + **遇到要求所有组合、可能、排列等解集的题目，一般都是用DFS + backtracking来做**
@@ -65,7 +69,6 @@
 
 
 + Two Pointers
-
   + 167-Two Sum II - Input array is sorted
   + 15-3Sum
   + 16-3Sum Closet
@@ -117,7 +120,9 @@
 + Stack(use stack as tool)
   + 455-Add Two Numbers II
   + 150-Evaluate Reverse Polish Notation (I'm quite familiar with this term, **overflow is not the focus of this problem**)
+  + 像Parentheses这种问题基本可以考虑用Stack
   + 20-Valid Parentheses
+  + 32-Longest Valid Parentheses(当然此题是最优化题，也可以用DP，但是不如用stack来的直观)
 
 + Binary Search Tree
   + 315-Count of Smaller Numbers After Self
@@ -128,11 +133,15 @@
   + 124-Binary Tree Maximum Path Sum(when no direct solution comes to mind, **recursion** is always the best one for tree-related problems)
   + 129-Sum Root to Leaf Numbers(easy question using recursion while keeping track of the value)
   + 337-House Robber III(with special trick)
+  + 638-Shopping Offers（像这样要遍历所有情况才能知道最优解的问题，DP或DFS才是正解）
+  + 301-Remove Invalid Parentheses(所有情况的，DFS上，但是需要一些预处理)
+  + 332-Reconstruct Itineray
 
 + Breadth-first-Search
   + 127-Word Ladder(**表面考String，实质考察图的两点的最短路径[refer](http://bangbingsyb.blogspot.com/2014/11/leetcode-word-ladder-i-ii.html)**  ,这里必须用BFS,用DFS会TLE)
-  + 126-Word LadderII(BFS + 剪枝)
+  + 126-Word LadderII(BFS + 剪枝,这道题确实难)
   + 130-Surrounded Regions(用递归DFS会栈溢出,用迭代DFS或BFS即可)
+  + 301-Remove Invalid Parentheses
 
 + Sort
   - 类似这种Interval和pair的题目，先sort技巧是经常用到的
@@ -141,6 +150,7 @@
   - 324-Wiggle Sort II
   - 174-Largest Number(**Special Sort Trick**, same with Offer)
   - 646-Maximum Length of Pair Chain
+  - 630-Course Schedule III
 
   * Bucket
   - 164-Maximum Gap
@@ -166,14 +176,26 @@
   - 45-Jump GameII
   - 134-Gas Station
   - 646-Maximum Length of Pair Chain
+  - 630-Course Schedule III(像这种pair的数据，一般都要根据某一个分量sort，再进行处理)
 
 + Find Rules(找规律题,这种题就是在面试中去寻找规律)
   + 54-Spiral Matrix
   + 59-Spiral Matrix II
   + 48-Rotate Image
+  + 218-The Skyline Problem(Hard)
 
 + Math
   + 60-Permutation Sequences(use math rather than backtracking to speed up)
+
++ Binary Indexed Tree
+  - 307-Range Sum Query - Mutable
+
++ Segment Tree
+  - 307-Range Sum Query - Mutable
+
++ Trie
+  - 208. Implement Trie (Prefix Tree)
+  - 211-Add and Search Word - Data structure design
 
 #### Same Trick
 
@@ -193,6 +215,11 @@
   + 523-Continuous Subarray Sum(遇到除法问题，我们肯定不能忘了除数为0的情况等处理)
 
 #### Same Topic
+
++ Minmax
+  + 486-Predict the Winner
+  + 464-Can I Win
+  + 375-Guess Number Higher or Lower II   
 
 + Palindromic
   + 214-shortest palindrome
@@ -233,6 +260,11 @@
   + 16-3Sum Closet
   + 18-4Sum 以上思路类似(**排序+双指针**)
   + 454-4Sum II 以上思路类似(**HashMap**;doesn't use sort)
+
++ Range Sum
+  + Range Sum Query - ImMutable   
+  + Range Sum Query - Mutable   
+  + Range Sum Query 2D - Immutable   
 
 + Interval
   + 56-Merge Intervals

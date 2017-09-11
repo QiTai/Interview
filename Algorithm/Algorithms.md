@@ -1,4 +1,40 @@
 ### Algorithms Related to Sort and Search
+#### Binary Search
+```cpp
+	// first style
+	int binarySearch(vector<int> nums, int target) {
+		if (nums.empty()) return -1;
+		int left = 0, right = nums.size() - 1;
+		while (left < right) {
+			int mid = left + (right - left) / 2;
+			if (nums[mid] == target) {
+				return mid;
+			} else if (nums[mid] < target) {
+				left = mid + 1;
+			} else {
+				right = mid;
+			}
+		}
+		return nums[left] == target ? left : -1;
+	}
+
+	// second style
+	int binarySearch(vector<int> nums, int target) {
+		if (nums.empty()) return -1;
+		int left = 0, right = nums.size() - 1;
+		while (left <= right) {
+			int mid = left + (right - left) / 2;
+			if (nums[mid] == target) {
+				return mid;
+			} else if (nums[mid] < target) {
+				left = mid + 1;
+			} else {
+				right = mid - 1;
+			}
+		}
+		return -1;
+	}
+```
 #### CountSort (refer to 剑指Offer)
 ```cpp
 // NOTICE : this counting sort algo. is different with Intro to Algo. book.
@@ -38,6 +74,20 @@ using std::vector;
 using std::cout;
 using std::endl;
 using std::for_each;
+
+int partition(vector<int>& nums, int left, int right) {
+    int pivot = nums[right];
+    int r = left - 1;
+    for (int i = left; i < right; i++) {
+        if (nums[i] < pivot) {
+            r++;
+            swap(nums[i], nums[r]);
+        }
+    }
+    r++;
+    swap(nums[r], nums[right]);
+    return r;
+}
 
 int partition(vector<int>& num, int p, int r) {
 	int x = num[r];
