@@ -12,3 +12,14 @@
   + attention机制?
 
 + LSTM(各种门)?
+
+
+##### About NLP
++ Hidden Markov Model
++ Maximum Entropy Markov Model
++ Conditional Random Field
++ label biased problem
++ [Why is skip-gram better for infrequent words than CBOW?](https://stats.stackexchange.com/questions/180548/why-is-skip-gram-better-for-infrequent-words-than-cbow)
++ tf.idf -> known
++ 词向量 -> known
++ LDA模型 -> todo

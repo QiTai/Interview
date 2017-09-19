@@ -10,6 +10,9 @@
 + [Deep learning techniques for sentiment analysis](https://www.quora.com/How-is-deep-learning-used-in-sentiment-analysis)
   + [LSTM for sentiment analysi](http://deeplearning.net/tutorial/lstm.html)
   + [LSTM/Recursive/CNN](https://cs224d.stanford.edu/reports/Shirani-MehrH.pdf)
++ 要检测图像的纹理，用max pooling还是average pooling?
+  + max-pooling，可以进行信息压缩，不关心纹理的具体位置，而是否出现，大概在哪
+
 
 ##### refers to [如果你是面试官，你怎么去判断一个面试者的深度学习水平](https://www.zhihu.com/question/41233373)
 
@@ -23,7 +26,7 @@
 + activation function: [Ans](https://www.zhihu.com/question/41233373) (paper to read!!!)
   + sigmoid/tanh/ReLu/LeakyReLU/PReLU(?)
 + loss: 有哪些方式(to be concluded, refers to cs231n)
-  + hinge(?)
+  + hinge
   + Cross Entropy
   + MSE
   + K-L散度(?)
@@ -67,9 +70,11 @@
   + 共线性会造成冗余，导致过拟合
   + 解决方法：排除变量的相关性，加入权重正则
 + 用贝叶斯机率说明dropout的原理
-  + **Dropout as a Bayesian Approximation: Insights and Applications**（to read?)
-+ **为什么网络够深(Neurons 足够多)的时候，总是可以避开较差Local Optima？**(paper to read??)
+  + **Dropout as a Bayesian Approximation: Insights and Applications**（to read!)
++ **为什么网络够深(Neurons 足够多)的时候，总是可以避开较差Local Optima？**(paper to read!!)
   + [The Loss Surfaces of Multilayer Networks](https://zhuanlan.zhihu.com/)
+
+
 + 说明如何用支持向量机实现深度学习(列出相关数学公式给他参考) (?)
 + 类别不平衡怎么办(?)
 
@@ -78,17 +83,6 @@
 
 ##### refers to [人工智能从业者面试指南](https://mp.weixin.qq.com/s?__biz=MzIzNzY5NDM2Nw==&mid=2247483961&idx=1&sn=007f5ffbaefb6388069f3cba1c9f80bd&chksm=e8c5fec9dfb277df961e5dd99a5161fdb953522ea9d6495e137316cf29f97e2f3c9b1eeec701#rd) (to read?)
 
-
-
-##### About NLP
-+ Hidden Markov Model
-+ Maximum Entropy Markov Model
-+ Conditional Random Field
-+ label biased problem
-+ [Why is skip-gram better for infrequent words than CBOW?](https://stats.stackexchange.com/questions/180548/why-is-skip-gram-better-for-infrequent-words-than-cbow)
-+ tf.idf -> known
-+ 词向量 -> known
-+ LDA模型 -> todo
 
 ### Resources
 

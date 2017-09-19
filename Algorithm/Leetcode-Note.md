@@ -78,8 +78,11 @@
   + 75-Sort Colors
   + 3-Longest Substring Without Repeating Characters
   + Longest Substring with At Most Two Distinct Characters
+  + Minimum Size Subarray Sum(涉及这种连续的子数组，就要考虑two Pointers的储存)
+  + 5-Implement strstr()(very precise code, need to be remembered!)
 
   + 125-Valid Palindrome(easy)
+  + 88-Merge Sorted Array(easy)
   + 234-Palindrome Linked List(with extra tricks: reverse list)
   + 9-Palindrome Number
 
@@ -91,6 +94,11 @@
   + 4-Median of Two Sorted Arrays--**Excellent Idea**
   + 34-Search for a Range--**Excellent Idea**
   + 315-Count of Smaller Numbers After Self
+  + Find Minimum in Rotated Sorted Array
+  + Find Minimum in Rotated Sorted Array II
+  + Search in Rotated Sorted Array
+  + Search in Rotated Sorted Array II
+
 
 + Divide and Conquer
   + 215-Kth Largest Element in an Array
@@ -107,6 +115,9 @@
   + 149-Max Points on a Line(在原本O(n^3)的基础上用Hash Table稍微改进到O(n^2),所以像这种Hard题目就是在原本思想上一点点改进)
   + 138-Copy List with Random Pointers(HashTable is the basic though, more beautiful trick is to modify original structure)
   + 133-Clone Graph
+  + 用两个HashTable对照
+    + Substring with Concatenation of All Words(由于存在字典所有单词长度相同，所以存在一种更快捷的遍历方式,参考Grandyang)
+    + Minimum Window Substring
   + [Find longest subarray whose sum is divisible by K](https://jdhao.github.io/2017/09/01/longest-subarray-modulo-K/)
 
 
@@ -120,6 +131,7 @@
 + Stack(use stack as tool)
   + 455-Add Two Numbers II
   + 150-Evaluate Reverse Polish Notation (I'm quite familiar with this term, **overflow is not the focus of this problem**)
+  + Min Stack(设计题-考虑用双栈,增加一个minStack,追踪min值的变化)
   + 像Parentheses这种问题基本可以考虑用Stack
   + 20-Valid Parentheses
   + 32-Longest Valid Parentheses(当然此题是最优化题，也可以用DP，但是不如用stack来的直观)
@@ -146,7 +158,7 @@
 + Sort
   - 类似这种Interval和pair的题目，先sort技巧是经常用到的
   - 56-Merge Intervals
-  - 47-Insert Interval
+  - 47-Insert Interval(Hard, because some tricky rules exists here)
   - 324-Wiggle Sort II
   - 174-Largest Number(**Special Sort Trick**, same with Offer)
   - 646-Maximum Length of Pair Chain
@@ -199,6 +211,10 @@
 
 #### Same Trick
 
++ Moore Voting
+  + Majority Element
+  + Majority Element II
+
 + swap number in an array
   + 题目一般要求O(n) time + O(1) space(正因为O(1) space,所以要修改原数组)
   + 41-First Missing Positive
@@ -215,6 +231,12 @@
   + 523-Continuous Subarray Sum(遇到除法问题，我们肯定不能忘了除数为0的情况等处理)
 
 #### Same Topic
+
++ Rotated Sorted Array
+  + Find Minimum in Rotated Sorted Array
+  + Find Minimum in Rotated Sorted Array II
+  + Search in Rotated Sorted Array
+  + Search in Rotated Sorted Array II
 
 + Minmax
   + 486-Predict the Winner
@@ -335,7 +357,7 @@
 + 234-Palindrome Linked List
 + 9-Palindrome Number
 
-+ 5-Implement strstr()
+
 
 + Reverse Words in a String
 + Reverse Words in a String II(in place)
