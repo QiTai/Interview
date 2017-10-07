@@ -1,2 +1,7 @@
 ### 面试题
-+ 一个m*m的矩阵，其中每个n*n矩阵中都有一个最大值（n<m），求这些最大值的之和
++ 平面点集的凸包
+  + http://blog.csdn.net/bobobe/article/details/46808293
+  + https://cyw3.github.io/YalesonChan/2016/ConvexHull.html
+
++ 用rand5产生rand7
+  + http://www.nowamagic.net/librarys/veda/detail/2172

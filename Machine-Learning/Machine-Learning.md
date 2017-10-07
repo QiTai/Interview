@@ -12,6 +12,7 @@
   + 参考[知乎帖](https://www.zhihu.com/question/24900876)
 + 数据不平衡怎么处理？
   + 基本思路：过采样，欠采样
+  + 从数据角度 正采样和负采样 从损失函数角度 添加scale平衡数据 从评价角度 用ROC,AUC而不用PRC
 + k-means的目标函数->参考ML Techniques Taipei slides
 + GBDT+LR如何实现广告CTR预估->refer to[Practical Lessons from Predicting Clicks on Ads at Facebook](https://pdfs.semanticscholar.org/daf9/ed5dc6c6bad5367d7fd8561527da30e9b8dd.pdf)
 + Naive Bayes vs. Logistic Regression:
@@ -64,3 +65,7 @@
 + [如何处理数据缺失问题](https://www.zhihu.com/question/26639110)
 + [机器学习中，有哪些特征选择的工程方法](https://www.zhihu.com/question/28641663)
 + PCA和LDA有很多的相似点，其本质是要将原始的样本映射到维度更低的样本空间中，但是PCA和LDA的映射目标不一样：PCA是为了让映射后的样本具有最大的发散性；而LDA是为了让映射后的样本有最好的分类性能。所以说PCA是一种无监督的降维方法，而LDA是一种有监督的降维方法。
++ [Kd-tree](http://www.cnblogs.com/eyeszjwang/articles/2429382.html)
++ [决策树是如何处理不完整数据的](https://www.zhihu.com/question/34867991/answer/224122110)
++ 特征工程有哪些方法(数据处理上的)主要是统计意义上的一些操作:1.OneHotEncoding 2.标准化 3.归一化 4.连续特征离散化 5.L1正则 6.GBDT 特征组合 7.特征重要性分析方法 卡方检验
++ 网易的面试官透露，社招会比校招容易进很多，尤其是在12月份。因为大家都在等年终奖。还有网易似乎Xgboost和GBDT用的比较多。想进网易的同学，做几个Xgboost和GBDT相关的项目，学一下hadoop或者Spark，至少自己搭个环境，这样进网易比较容易。

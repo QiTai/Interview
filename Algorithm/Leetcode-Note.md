@@ -9,7 +9,6 @@
 
 
 ### Similar Question
-
 #### Same Method
 
 + Dynamic Programming (**在String类型题目中用的很多**)
@@ -47,6 +46,11 @@
   + 264-Ugly Number II(Microsoft Skype Interview Question)
   + 464-Can I Win(用到bit manipulation的技巧来区分不同状态)
   + 486-Predict the Winner
+  + 64-Minimum Path Sum
+  + 221-Maximal Square
+  + 85-Maximal Rectangle(除了标准法DP之外，可以将问题转换为Largest Rectangle in Histogram)
+  + 343-Integer Break(还可以从找规律的角度解答这个问题,refer to Grandyang)
+  + 304-Range Sum Query 2D-Immutable
 
 + BackTracking
   + **遇到要求所有组合、可能、排列等解集的题目，一般都是用DFS + backtracking来做**
@@ -62,7 +66,7 @@
   + 131-Palindrome Partitioning(return all possible,用回溯;利用DP存储有用信息，节省时间)
   + 51-N-Queens(Hard)
   + 52-N-Queens II(Hard)
-  + 140-Word Break II(同样是求all possible,用回溯，但是TLE了，还要加上**“剪枝"**的技巧)
+  + 140-Word Break II(同样是求all possible,用回溯，但是TLE了，还要加上**剪枝**的技巧)
   + 79-Word Search(related to **PATH**, naturally **DFS**)
   + 212-Word Search II(“剪枝”的技巧+**Trie**)
   + 93-restore IP Addresses
@@ -99,21 +103,21 @@
   + Search in Rotated Sorted Array
   + Search in Rotated Sorted Array II
 
-
 + Divide and Conquer
   + 215-Kth Largest Element in an Array
   + 23-Merge K Sorted Lists
 
 + Hash & Hash Table
-  + 在string和array中要用到**统计出现次数**时常用的手段
+  + 在string和array中要用到**统计出现次数**时常用的手段,问题的关键就变为了如何来构造key
   + 49-Group Anagrams
+  + 249-Group Shifted Strings
   + 347-Top K Frequent Elements(对于这类的**统计数字**的问题，首先应该考虑用哈希表来做)
   + 1-Two Sum
   + 454-4Sum II
   + 166-Fraction to Recurring Decimal (编程之美上有一道反过来的题目Decimal->Fraction,可以对比)
   + 128-Longest Consecutive Sequence(本来一看到这种longest要想到DP,但是完全无法找到子问题与原问题之间的联系，所以要重新想思路，又看到题目要求O(n),所以“空间换时间”，在空间换时间方法中，最常用的就是Hash相关数据结果**unordered_map或unordered_set**)
   + 149-Max Points on a Line(在原本O(n^3)的基础上用Hash Table稍微改进到O(n^2),所以像这种Hard题目就是在原本思想上一点点改进)
-  + 138-Copy List with Random Pointers(HashTable is the basic though, more beautiful trick is to modify original structure)
+  + 138-Copy List with Random Pointers(HashTable is the basic thought, more beautiful trick is to modify original structure)
   + 133-Clone Graph
   + 用两个HashTable对照
     + Substring with Concatenation of All Words(由于存在字典所有单词长度相同，所以存在一种更快捷的遍历方式,参考Grandyang)
@@ -135,6 +139,7 @@
   + 像Parentheses这种问题基本可以考虑用Stack
   + 20-Valid Parentheses
   + 32-Longest Valid Parentheses(当然此题是最优化题，也可以用DP，但是不如用stack来的直观)
+  + 84-Largest Rectangle in Histogram
 
 + Binary Search Tree
   + 315-Count of Smaller Numbers After Self
@@ -154,13 +159,14 @@
   + 126-Word LadderII(BFS + 剪枝,这道题确实难)
   + 130-Surrounded Regions(用递归DFS会栈溢出,用迭代DFS或BFS即可)
   + 301-Remove Invalid Parentheses
+  + 407-Trapping Rain Water II(可以结合Trapping Rain Water一起考虑)
 
 + Sort
   - 类似这种Interval和pair的题目，先sort技巧是经常用到的
   - 56-Merge Intervals
   - 47-Insert Interval(Hard, because some tricky rules exists here)
   - 324-Wiggle Sort II
-  - 174-Largest Number(**Special Sort Trick**, same with Offer)
+  - 174-Largest Number(**Special Sort Trick**,考虑一些特殊输入, same with Offer)
   - 646-Maximum Length of Pair Chain
   - 630-Course Schedule III
 
@@ -186,9 +192,10 @@
 + Greedy
   - 55-Jump Game (**From Dynamic Programming to Greedy**)
   - 45-Jump GameII
-  - 134-Gas Station
+  - 134-Gas Station (find special rules)
   - 646-Maximum Length of Pair Chain
   - 630-Course Schedule III(像这种pair的数据，一般都要根据某一个分量sort，再进行处理)
+  - 135-Candy
 
 + Find Rules(找规律题,这种题就是在面试中去寻找规律)
   + 54-Spiral Matrix
@@ -208,6 +215,10 @@
 + Trie
   - 208. Implement Trie (Prefix Tree)
   - 211-Add and Search Word - Data structure design
+
++ Design
+  + 146-LRU Cache(list function: splice, push_front)
+  + 460-LFU Cache(very Complex data structure)
 
 #### Same Trick
 
@@ -232,6 +243,11 @@
 
 #### Same Topic
 
++ Range Sum Query
+  + 303-Range Sum Query - Immutable
+  + 307-Range Sum Query - Mutable
+  + 304-Range Sum Query 2D - Immutable
+
 + Rotated Sorted Array
   + Find Minimum in Rotated Sorted Array
   + Find Minimum in Rotated Sorted Array II
@@ -242,11 +258,14 @@
   + 486-Predict the Winner
   + 464-Can I Win
   + 375-Guess Number Higher or Lower II   
+  + 294-Flip Game II
 
 + Palindromic
   + 214-shortest palindrome
     + brute force(reverse string and compare the largest common substring) can be accepted! O(n^2) O(n), remember this solution
-    + two pointers is better solution! O(n^2) O(1), use this method
+    + Grandyang 2nd way(very concise, use this method)
+    + two pointers is better solution! O(n^2) O(1), use this method (refer to submission 179ms)
+    + two pointers & reverse (refer to hint in leetcode website)
     + Special String Tricks+KMP: just understand it, won't use it in real interview!
   + 5-Longest Palindromic Substring
     + Dyanamic Programming->optimization problem's first thought
@@ -269,9 +288,10 @@
   + 289-Game of Life--**Use different numbers to represent the states**
   + 73-Set Matrix Zeroes--**use the first row and col to store the states**
 
-+ 419-Battleships in a Board vs. 200-Number of Islands
++ 419-Battleships in a Board vs. 200-Number of Islands vs. 305 Number of Islands II
   - 419(Extra rules, horizontal and vertical, easy to solve)
   - 200(DFS to solve)
+  - 305(Very good solution Grandyang)
 
 + Sum
   + 1-Two Sum
@@ -298,6 +318,10 @@
   + fakeHead的技巧用的较多
   + 2-Add Two Numbers(比较简单的list题目，最后注意要考虑carry)
   + 455-Add Two Numbers II
+  + 143-Reorder List
+  + 104-Odd Even Linked List
+  + 86-Partition List
+  + 24-Swap Nodes in Pair(参考leetcode_50解法)
 
 + Maximum in Binary Tree
   + 124-Binary Tree Maximum Path Sum
@@ -335,7 +359,14 @@
 
   + 371-Sum of Two Integers (Pure Bit Manipulation)
 
++ Caculator
+  + 用的方法都类似,从stack的角度考虑
+  + 227-Basic Calculator II
+  + 224-Basic Calculator
+
 ### Review Done
+
++ Increasing Triplet Subsequence
 
 #### Top Interview Questions
 + 238-Product of Array Except Self(Special Trick: forward & backward iteration)
@@ -349,15 +380,12 @@
 + 3-Longest Substring Without Repeating Characters
 + Longest Substring with At Most Two Distinct Characters
 
-
 + 22-Generate Parentheses
 + 20-Valid Parentheses
 
 + 125-Valid Palindrome(easy)
 + 234-Palindrome Linked List
 + 9-Palindrome Number
-
-
 
 + Reverse Words in a String
 + Reverse Words in a String II(in place)
