@@ -51,6 +51,8 @@
   + 85-Maximal Rectangle(除了标准法DP之外，可以将问题转换为Largest Rectangle in Histogram)
   + 343-Integer Break(还可以从找规律的角度解答这个问题,refer to Grandyang)
   + 304-Range Sum Query 2D-Immutable
+  + 96-Unique Binary Search Trees(其本质是卡塔兰数,数量同Generate Parentheses一样)
+  + LintCode-Coins in a Line(参考leetcode_50)
 
 + BackTracking
   + **遇到要求所有组合、可能、排列等解集的题目，一般都是用DFS + backtracking来做**
@@ -70,6 +72,8 @@
   + 79-Word Search(related to **PATH**, naturally **DFS**)
   + 212-Word Search II(“剪枝”的技巧+**Trie**)
   + 93-restore IP Addresses
+  + 113-Path Sum II(求所有情形,可以用backtracking,但由于这是二叉树,所以也可以用层次遍历的方式完成)
+  + 95-Unique Binary Search Trees II
 
 
 + Two Pointers
@@ -205,6 +209,8 @@
 
 + Math
   + 60-Permutation Sequences(use math rather than backtracking to speed up)
+  + 12-Integer to Roman
+  + 13-Roman to Integer
 
 + Binary Indexed Tree
   - 307-Range Sum Query - Mutable
@@ -219,6 +225,8 @@
 + Design
   + 146-LRU Cache(list function: splice, push_front)
   + 460-LFU Cache(very Complex data structure)
+  + 225-Implement Stack Using Queues
+  + 232-Implement Queue Using Stacks
 
 #### Same Trick
 
@@ -322,6 +330,45 @@
   + 104-Odd Even Linked List
   + 86-Partition List
   + 24-Swap Nodes in Pair(参考leetcode_50解法)
+  + 92-Reverse Linked List II
+  + 19-Remove Nth Node From End of the List(像这种要求一次遍历的题目用快慢指针技巧)
+  + 234-Palindrome Linked List(快慢指针，翻转／利用Stack)
+
++ Binary Tree
+  + 144-Binary Tree Preorder Traversal(借助stack，最简单)
+  + 94-Binary Tree Inorder Traversal(借助stack,但是比Preorder复杂)
+  + 145-Binary Tree Postorder Traversal(借助stack,但是逻辑最烦)
+  + 125-Binary Tree Level Order Traversal(借助queue,但是注意首先获得每一层的大小)
+  + 107-Binary Tree Level Order Traversal II(借助queue,只是加入res的顺序和I不太一样)
+  + 14-Binary Tree Vertical Order Traversal(借助queue,用递归来求Vertical Order)
+  + 226-Invert Binary Tree(传统递归方法,或者借助queue)
+  + 114-Flatten Binary Tree to Linked List
+  + 106-Construct Binary Tree from Inorder and Postorder Traversal(典型递归解决)
+  + 105-Construct Binary Tree from Preorder and Inorder Traversal(典型递归解决)
+  + 111-Minimum Depth of Binary Tree(递归或者queue)
+  + 104-Maximum Depth of Binary Tree(递归或者queue)
+  + 124-Binary Tree Maximum Path Sum(Hard,递归)
+  + 110-Balanced Binary Tree(递归,当树左右子树高度不同时,用max来求)
+  + 101-Symmetric Tree(递归,或者queue)
+  + 199-Binary Tree Right Side View(层次遍历取出每一层的最后一个节点)
+  + 236-Lowest Common Ancestor of a Binary Tree
+  + 331-Verify Preorder Serialization of a Binary Tree(想到用stack来做是最自然的想法,但是Grandyang提供了很简洁的思路;此题还要注意如何在C++中实现split)
+  + 116-Populating Next Right Pointers in Each Node(最自然会想到层次遍历，然后做连接操作;不满足O(1),用上下两层指针来操作!!!)
+  + 117-Populating Next Right Pointers in Each Node II(层次遍历同116没区别;用上下两层指针就有区别了，这里需要额外的判断及保存下层开始位置)
+  + 129-Sum Root to Leaf Numbers(DFS迭代的基本思想)
+  + 222-Count Complete Tree Nodes
+  + 
+  
+  
+
++ Binary Search Tree
+  + 230-Kth Smallest Element in BST
+  + 98-Validate Binary Search Tree
+  + 137-Convert Sorted Array to Binary Search Tree(中位数+递归)
+  + 109-Convert Sorted List to Binary Search Tree(最简单的想法:先找到中间节点，再递归;更漂亮的解法是用bottom-up解法,参考leetcode_50)
+  + 173-Binary Search Tree Iterator(中序遍历的非递归形式)
+  + 235-Lowest Common Ancestor of a Binary Search Tree
+  
 
 + Maximum in Binary Tree
   + 124-Binary Tree Maximum Path Sum
