@@ -24,14 +24,15 @@
   + 139-Word Break(**yes or no question**)
   + 322-Coin Change(**minimum optimization question**)
   + 91-Decode Ways(**conventional sub-problems**)
+  + 639-Decode Ways II(同Decode Ways差不多,只不过情况更复杂)
   + 10-Regular Expression Matching(string类题目，而且状态不是很好判断，且用recursion可以解决的用DP省时间)
   + 44-Wildcard Matching(string类题目，用recursion会超时，就想到用DP)
   + 198-House Robber
   + 213-House Robber II
   + 123-Best time to buy and sell stock III
   + 188-Best time to buy and sell stock IV
-  + 72-Edit Distance
-  + 115-Distinct Subsequences
+  + 72-Edit Distance(string范围内典型的DP问题)
+  + 115-Distinct Subsequences(string范围内典型的DP问题)
   + 53-Maximum Subarray
   + 152-Maximum Product Subarray
   + 192-Dungeon Game
@@ -53,6 +54,9 @@
   + 304-Range Sum Query 2D-Immutable
   + 96-Unique Binary Search Trees(其本质是卡塔兰数,数量同Generate Parentheses一样)
   + LintCode-Coins in a Line(参考leetcode_50)
+  + 97-Interleaving String(leetcode-cpp)
+  + 87-Scramble String(leetcode-cpp,第一次碰到要用三维的dp矩阵,这道题还是很有难度的)
+  + 416-Partition Equal Subset Sum(我的思路是借鉴背包问题的动归)
 
 + BackTracking
   + **遇到要求所有组合、可能、排列等解集的题目，一般都是用DFS + backtracking来做**
@@ -68,7 +72,7 @@
   + 131-Palindrome Partitioning(return all possible,用回溯;利用DP存储有用信息，节省时间)
   + 51-N-Queens(Hard)
   + 52-N-Queens II(Hard)
-  + 140-Word Break II(同样是求all possible,用回溯，但是TLE了，还要加上**剪枝**的技巧)
+  + 140-Word Break II(同样是求all possible,用回溯，但是TLE了，还要加上**剪枝**的技巧;记住DP也可以作为剪枝的辅助手段,参考leetcode-cpp解法)
   + 79-Word Search(related to **PATH**, naturally **DFS**)
   + 212-Word Search II(“剪枝”的技巧+**Trie**)
   + 93-restore IP Addresses
