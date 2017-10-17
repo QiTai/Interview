@@ -74,3 +74,15 @@
   + [基于矩阵分解](https://mp.weixin.qq.com/s?__biz=MzIzODExMDE5MA==&mid=2694182465&idx=1&sn=c644809b757bb1c3f0439eae4bb2f78c#rd)
   + [Replicator Neural Networks (RNNs)](https://mp.weixin.qq.com/s?__biz=MzIzODExMDE5MA==&mid=2694182516&idx=1&sn=057cdf801d322da4d83dbf96376e7eee#rd)
   + [异常点检测算法综述](https://mp.weixin.qq.com/s?__biz=MzIzODExMDE5MA==&mid=2694182558&idx=1&sn=7a9043417ceaf3ca783a507eea18c2d6&chksm=cc5f021ffb288b095834570b123ad9c5d4e36e852f9f5bc4fea738486e3577dde69fa9b9b43f#rd)
++ [L1比L2更易获得稀疏解](https://www.zhihu.com/question/37096933)
+  + L1可以近似L0,而L0是直接冲着稀疏解去优化的
+  + l2 regularisation 相当于假设我们所求解w的分布为高斯分布，l1对应的先验概率函数则为拉布拉斯分布，是稀疏的
+  + 画周志华书上的那副图
+
+### TODO
++ xgboost
+  + xgboost里面的lambda rank的损失函数是什么？
+  + xgboost在什么地方做的剪枝，怎么做的？
+  + xgboost如何分布式？特征分布式和数据分布式?各有什么存在的问题？
+  + lightgbm和xgboost有什么区别？他们的loss一样么？ 算法层面有什么区别？
+  + lightgbm有哪些实现，各有什么区别？

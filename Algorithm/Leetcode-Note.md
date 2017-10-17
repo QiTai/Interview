@@ -6,8 +6,6 @@
   + 166-Fraction to Recurring Decimal
   + 7-Reverse Integer
 
-
-
 ### Similar Question
 #### Same Method
 
@@ -33,6 +31,7 @@
   + 188-Best time to buy and sell stock IV
   + 309-Best time to buy and sell stock with cooldown(此题的动态规划需要好好想想怎么来划分子问题,以及保存什么子问题)
   + 72-Edit Distance(string范围内典型的DP问题)
+  + 583-Delete Operation for Two Strings(string典型DP问题,更精妙的是此题的两种解法都是通过转化完成,可以转化成Edit Distance或Longest Common Subsequences完成)
   + 115-Distinct Subsequences(string范围内典型的DP问题)
   + 53-Maximum Subarray
   + 152-Maximum Product Subarray
@@ -205,6 +204,7 @@
   - 646-Maximum Length of Pair Chain
   - 630-Course Schedule III(像这种pair的数据，一般都要根据某一个分量sort，再进行处理)
   - 135-Candy
+  - 621-Task Scheduler(看到这种minimal的问题，一开始我一直从DP角度想，想不通，所以下次发现DP用不了，要从Greedy角度思考)
 
 + Find Rules(找规律题,这种题就是在面试中去寻找规律)
   + 54-Spiral Matrix
