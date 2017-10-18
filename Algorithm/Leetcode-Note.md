@@ -78,7 +78,7 @@
   + 93-restore IP Addresses
   + 113-Path Sum II(求所有情形,可以用backtracking,但由于这是二叉树,所以也可以用层次遍历的方式完成)
   + 95-Unique Binary Search Trees II
-
+  + 494-Target Sum(也可以用DP,最先想到的还是用递归)
 
 + Two Pointers
   + 167-Two Sum II - Input array is sorted
@@ -169,6 +169,9 @@
   + 301-Remove Invalid Parentheses
   + 407-Trapping Rain Water II(可以结合Trapping Rain Water一起考虑)
 
++ Union Find
+  + 547-Friend Circles(这道题的本质是求无向图的连通图的个数,可以用DFS或BFS解决，但是用Union Find的方法是最漂亮的,root向量；有两道被锁的题目可以用同样的思路解答Number of Connected Components in an Undirected Graph和Graph Valid Tree)
+
 + Sort
   - 类似这种Interval和pair的题目，先sort技巧是经常用到的
   - 56-Merge Intervals
@@ -211,6 +214,7 @@
   + 59-Spiral Matrix II
   + 48-Rotate Image
   + 218-The Skyline Problem(Hard)
+  + 31-Next Permutation(Medium,这道题的解题规律很漂亮)
 
 + Math
   + 60-Permutation Sequences(use math rather than backtracking to speed up)

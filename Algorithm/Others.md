@@ -5,3 +5,6 @@
 
 + 用rand5产生rand7
   + http://www.nowamagic.net/librarys/veda/detail/2172
+
+### TODO
++ 有一个坐标轴，上面有很多点，每个点有坐标，求长度为L的绳子最多能够覆盖几个点？

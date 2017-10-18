@@ -16,9 +16,8 @@
 
 ##### TODO 
 + 各种最优化方法比较 拟牛顿法和牛顿法区别，哪个收敛快,为什么？
-
 + 深度学习的优化方法有哪些？ sgd、adam、adgrad区别？ adagrad详细说一下？为什么adagrad适合处理稀疏梯度？
-
++ [batch normalization为什么能够提升训练速度？](https://www.zhihu.com/question/38102762/answer/199732599)
 
 ##### refers to [如果你是面试官，你怎么去判断一个面试者的深度学习水平](https://www.zhihu.com/question/41233373)
 
