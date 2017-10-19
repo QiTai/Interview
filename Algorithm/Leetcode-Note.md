@@ -62,6 +62,9 @@
   + **遇到要求所有组合、可能、排列等解集的题目，一般都是用DFS + backtracking来做**
   + 如果单纯用backtracking会TLE，则考虑**剪枝(140,212)**;或者先用**dynamic programming储存一些有用信息(131)**
   + 77-Combination
+  + 39-Combination Sum
+  + 40-Combination Sum II(同Combination Sum相比,仅仅需要改动一点点代码)
+  + 216-Combination Sum III(更像Combination,Combination Sum这三题差不多，可能需要改变的就是如何在不同题目要求下保证给出的解是**不重复**的)
   + 46-Permutations
   + 47-Permutations II
   + 78-Subsets
