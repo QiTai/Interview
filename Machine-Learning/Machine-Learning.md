@@ -69,7 +69,7 @@
 + [决策树是如何处理不完整数据的](https://www.zhihu.com/question/34867991/answer/224122110)
 + 特征工程有哪些方法(数据处理上的)主要是统计意义上的一些操作:1.OneHotEncoding 2.标准化 3.归一化 4.连续特征离散化 5.L1正则 6.GBDT 特征组合 7.特征重要性分析方法 卡方检验
 + 网易的面试官透露，社招会比校招容易进很多，尤其是在12月份。因为大家都在等年终奖。还有网易似乎Xgboost和GBDT用的比较多。想进网易的同学，做几个Xgboost和GBDT相关的项目，学一下hadoop或者Spark，至少自己搭个环境，这样进网易比较容易。
-+ [异常检测](https://zhuanlan.zhihu.com/p/25753926)
++ [异常检测](https://zhuanlan.zhihu.com/p/25753926)：异常检测属于无监督式学习
   + [基于统计的方法](https://mp.weixin.qq.com/s?__biz=MzIzODExMDE5MA==&mid=2694182460&idx=1&sn=a4842775394946bb643006e2e7c67be9#rd)
   + [基于矩阵分解](https://mp.weixin.qq.com/s?__biz=MzIzODExMDE5MA==&mid=2694182465&idx=1&sn=c644809b757bb1c3f0439eae4bb2f78c#rd)
   + [Replicator Neural Networks (RNNs)](https://mp.weixin.qq.com/s?__biz=MzIzODExMDE5MA==&mid=2694182516&idx=1&sn=057cdf801d322da4d83dbf96376e7eee#rd)
