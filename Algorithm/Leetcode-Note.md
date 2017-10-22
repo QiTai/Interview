@@ -218,6 +218,7 @@
   + 48-Rotate Image
   + 218-The Skyline Problem(Hard)
   + 31-Next Permutation(Medium,这道题的解题规律很漂亮)
+  + 581-Shortest Unsorted Continuous Subarray(Grandyang的第三种解法很漂亮)
 
 + Math
   + 60-Permutation Sequences(use math rather than backtracking to speed up)
