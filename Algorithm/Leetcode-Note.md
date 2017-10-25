@@ -130,6 +130,7 @@
   + 149-Max Points on a Line(在原本O(n^3)的基础上用Hash Table稍微改进到O(n^2),所以像这种Hard题目就是在原本思想上一点点改进)
   + 138-Copy List with Random Pointers(HashTable is the basic thought, more beautiful trick is to modify original structure)
   + 133-Clone Graph
+  + 508-Most Frequent Subtree Sum
   + 用两个HashTable对照
     + Substring with Concatenation of All Words(由于存在字典所有单词长度相同，所以存在一种更快捷的遍历方式,参考Grandyang)
     + Minimum Window Substring
@@ -370,7 +371,7 @@
   + 129-Sum Root to Leaf Numbers(DFS迭代的基本思想)
   + 222-Count Complete Tree Nodes
   + 437-Path Sum III(有意思,递归里面套递归)
-  
+  + 572-Subtree of Another Tree(递归里面套递归)
 
 + Binary Search Tree
   + 230-Kth Smallest Element in BST
