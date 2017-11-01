@@ -117,6 +117,8 @@
 + Divide and Conquer
   + 215-Kth Largest Element in an Array
   + 23-Merge K Sorted Lists
+  + 282-Expression Add Operators(一开始想到BackTracking的方式,但是对比下来会发现Divide and Conquer代码会简单很多,注意比较)
+  + 241-Different Ways to Add Parentheses(这道题经典，结合282，一起感受用BackTracking和Divide and Conquer之间区别)
 
 + Hash & Hash Table
   + 在string和array中要用到**统计出现次数**时常用的手段,问题的关键就变为了如何来构造key
