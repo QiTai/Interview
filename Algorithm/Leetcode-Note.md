@@ -75,6 +75,7 @@
   + 131-Palindrome Partitioning(return all possible,用回溯;利用DP存储有用信息，节省时间)
   + 51-N-Queens(Hard)
   + 52-N-Queens II(Hard)
+  + 37-Sudoku Solver(Hard,方法同N-Queens II很像,套路都是遍历+回溯+Valid函数)
   + 140-Word Break II(同样是求all possible,用回溯，但是TLE了，还要加上**剪枝**的技巧;记住DP也可以作为剪枝的辅助手段,参考leetcode-cpp解法)
   + 79-Word Search(related to **PATH**, naturally **DFS**)
   + 212-Word Search II(“剪枝”的技巧+**Trie**)
